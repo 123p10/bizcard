@@ -1,0 +1,2568 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "a4be7c34-1f6d-4a38-ab3c-fcd1dfa185d1")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 91.44 118.11) (xy 97.79 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03582ab2-6b0f-4e68-9df0-8a5bf522ee29")
+	)
+	(wire
+		(pts
+			(xy 99.06 102.87) (xy 91.44 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a28766a-6444-43cc-87b8-a1f4b078f6ea")
+	)
+	(wire
+		(pts
+			(xy 212.09 135.89) (xy 205.74 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10bc6d04-cbfe-45b2-aed4-90b48ff8b3bb")
+	)
+	(wire
+		(pts
+			(xy 212.09 68.58) (xy 205.74 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "133cd851-e727-42d8-ab37-31ac343b3d9a")
+	)
+	(wire
+		(pts
+			(xy 204.47 85.09) (xy 212.09 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "166f49f4-b1ee-49bf-aead-d7f4bfcb4eaf")
+	)
+	(wire
+		(pts
+			(xy 91.44 50.8) (xy 97.79 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26e5fc5e-52bd-4033-bd59-0dcff73442b6")
+	)
+	(wire
+		(pts
+			(xy 182.88 68.58) (xy 177.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea43831-4ea4-4bd3-960b-33efd78baa46")
+	)
+	(wire
+		(pts
+			(xy 204.47 50.8) (xy 212.09 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3001d018-0b41-4071-8d39-bf3781465691")
+	)
+	(wire
+		(pts
+			(xy 63.5 85.09) (xy 63.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "339541a5-7c5c-42a5-bb7a-5772083aa27f")
+	)
+	(wire
+		(pts
+			(xy 241.3 85.09) (xy 234.95 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c5aae41-31ba-4762-99de-cae6f1c5104d")
+	)
+	(wire
+		(pts
+			(xy 212.09 102.87) (xy 205.74 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e9270c6-b4a7-4b40-936c-34003753b5c7")
+	)
+	(wire
+		(pts
+			(xy 148.59 118.11) (xy 153.67 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f823221-00be-4255-b22a-b6fed97c4bb3")
+	)
+	(wire
+		(pts
+			(xy 182.88 135.89) (xy 177.8 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a15dda-0dee-45b8-9d5b-4192d0736892")
+	)
+	(wire
+		(pts
+			(xy 99.06 68.58) (xy 91.44 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41644e53-51a5-452a-ac14-897d90df88c1")
+	)
+	(wire
+		(pts
+			(xy 120.65 50.8) (xy 125.73 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46cfc454-fdf1-4da6-8378-7c104fd6532f")
+	)
+	(wire
+		(pts
+			(xy 241.3 102.87) (xy 241.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "506ba66a-f5ca-47eb-a454-e8cf029d8efd")
+	)
+	(wire
+		(pts
+			(xy 148.59 50.8) (xy 153.67 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5310c6d6-5bde-4296-a4c2-dc50affb8a72")
+	)
+	(wire
+		(pts
+			(xy 241.3 68.58) (xy 241.3 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54b2b7b8-30cf-4a61-b2c9-c65459774cfd")
+	)
+	(wire
+		(pts
+			(xy 182.88 102.87) (xy 177.8 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b31cd34-61ae-496d-8663-c126400b3970")
+	)
+	(wire
+		(pts
+			(xy 234.95 102.87) (xy 241.3 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b62597d-bab7-44d2-aa75-4bcc133091f8")
+	)
+	(wire
+		(pts
+			(xy 176.53 118.11) (xy 181.61 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c1f6618-e984-4db5-bc64-85c0a0249b5a")
+	)
+	(wire
+		(pts
+			(xy 204.47 118.11) (xy 212.09 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684a811c-fe65-4aa8-ad8c-a4092de6802a")
+	)
+	(wire
+		(pts
+			(xy 68.58 85.09) (xy 63.5 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a710121-6859-4f50-9659-c31f3ddd23f6")
+	)
+	(wire
+		(pts
+			(xy 154.94 68.58) (xy 149.86 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb6e8bf-5ac7-4bf5-89e9-bde75610e5bd")
+	)
+	(wire
+		(pts
+			(xy 91.44 85.09) (xy 97.79 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d53a1d2-aa54-42e5-b71a-19d2bd078fd2")
+	)
+	(wire
+		(pts
+			(xy 63.5 68.58) (xy 68.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "804f947e-9aa6-44aa-a5cd-991bfc0eb43e")
+	)
+	(wire
+		(pts
+			(xy 176.53 85.09) (xy 181.61 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b7dcd5d-db56-4e13-99f4-7ec4a43abed4")
+	)
+	(wire
+		(pts
+			(xy 127 68.58) (xy 121.92 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9588d10a-a797-4a42-bd7a-c1da3f7897a6")
+	)
+	(wire
+		(pts
+			(xy 148.59 85.09) (xy 153.67 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9669c678-d04a-4516-a3e1-47727feba35f")
+	)
+	(wire
+		(pts
+			(xy 154.94 135.89) (xy 149.86 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9932625c-b7eb-4420-acb7-16dec0bfa1f2")
+	)
+	(wire
+		(pts
+			(xy 154.94 102.87) (xy 149.86 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ea0f42-66f2-4be4-bb2e-d0e682094701")
+	)
+	(wire
+		(pts
+			(xy 63.5 50.8) (xy 68.58 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a28ebdc-0a85-4631-a039-70d09fb0c853")
+	)
+	(wire
+		(pts
+			(xy 241.3 135.89) (xy 241.3 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c2c35f8-201a-497c-a1d1-a5fe64526210")
+	)
+	(wire
+		(pts
+			(xy 127 135.89) (xy 121.92 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0299786-6e85-40bd-82cf-17219aa0424c")
+	)
+	(wire
+		(pts
+			(xy 63.5 118.11) (xy 63.5 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5256b15-516e-4d39-ae69-272b75e419bc")
+	)
+	(wire
+		(pts
+			(xy 127 102.87) (xy 121.92 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a67d559e-c9bf-4642-9343-5bc7121325c6")
+	)
+	(wire
+		(pts
+			(xy 120.65 85.09) (xy 125.73 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d177fd-a51b-49c6-a006-17078f041801")
+	)
+	(wire
+		(pts
+			(xy 176.53 50.8) (xy 181.61 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c21b050f-85b6-45a1-b516-4b40186a4887")
+	)
+	(wire
+		(pts
+			(xy 234.95 68.58) (xy 241.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c538c337-6448-4815-8585-d2b437633207")
+	)
+	(wire
+		(pts
+			(xy 99.06 135.89) (xy 91.44 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d03f9161-afb8-4c55-8bca-635281344ce1")
+	)
+	(wire
+		(pts
+			(xy 241.3 118.11) (xy 234.95 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1e2815b-605d-4149-aa88-4e4981703ace")
+	)
+	(wire
+		(pts
+			(xy 68.58 118.11) (xy 63.5 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfb4685d-23f4-44dd-9c60-cde8eb8bac93")
+	)
+	(wire
+		(pts
+			(xy 234.95 135.89) (xy 241.3 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e789401c-6b03-417a-84aa-b554fc2265a3")
+	)
+	(wire
+		(pts
+			(xy 241.3 50.8) (xy 234.95 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3ad3b9e-f9d2-48f1-8fa7-bda55686b877")
+	)
+	(wire
+		(pts
+			(xy 120.65 118.11) (xy 125.73 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f876b8d1-91f3-4f42-99c3-b5f67831c741")
+	)
+	(wire
+		(pts
+			(xy 63.5 102.87) (xy 68.58 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbd71b05-571a-4f5a-b4c7-421642b015b5")
+	)
+	(hierarchical_label "DIN"
+		(shape input)
+		(at 63.5 50.8 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a69dd6f4-1e7c-4162-b878-6d61d36b9759")
+	)
+	(sheet
+		(at 154.94 64.77)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "014de56d-2c42-466f-9bf1-2296f1e6fdd2")
+		(property "Sheetname" "ledsub_9"
+			(at 154.94 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 154.94 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 177.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6254ee75-dd15-4ab2-90bf-00ac84d5ddb8")
+		)
+		(pin "DOUT" output
+			(at 154.94 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f1ecc466-b6b8-4c40-97fb-626bef2d84e3")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 64.77)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "04e99d1c-5915-4bd5-aebd-273f0aab74f7")
+		(property "Sheetname" "ledsub_10"
+			(at 127 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 127 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 149.86 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "94d521db-050f-4adb-8f7c-f7ac1cf82cb6")
+		)
+		(pin "DOUT" output
+			(at 127 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "1871d0e3-67a4-4cc6-b97e-c5c78d035352")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 64.77)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "056fc479-57d5-41fb-a0de-7dee4968383e")
+		(property "Sheetname" "ledsub_12"
+			(at 68.58 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 68.58 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 91.44 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "9381a790-2993-431a-9416-9bda48dde656")
+		)
+		(pin "DOUT" output
+			(at 68.58 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a61d82b5-0636-4f66-a86d-20a347e5c937")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 132.08)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "07888c57-525e-47ba-9cf9-19a694a4c400")
+		(property "Sheetname" "ledsub_33"
+			(at 154.94 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 154.94 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 177.8 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ce8bf1c7-b356-4ad6-aa8f-246945d2c7f2")
+		)
+		(pin "DOUT" output
+			(at 154.94 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "851c5c6c-0154-43e7-934b-2417a8abc707")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "37")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 99.06 132.08)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "17acfebc-990f-42a7-8281-1633462317e4")
+		(property "Sheetname" "ledsub_35"
+			(at 99.06 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 99.06 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 121.92 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "f2f3ed0b-4b20-4b8b-9ee4-69b6bf3d8adc")
+		)
+		(pin "DOUT" output
+			(at 99.06 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e24d26f0-5e20-4278-a4bf-8144b2e130f2")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "39")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 46.99)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "20d8baf3-3b0f-46af-a5c6-a61880b38a0a")
+		(property "Sheetname" "ledsub_3"
+			(at 125.73 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 125.73 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 125.73 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "50d9ea25-6b94-4988-9590-c58bdee6d72d")
+		)
+		(pin "DOUT" output
+			(at 148.59 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c7539f90-20e8-491f-84fe-f707b06e14b0")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 99.06 99.06)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2aba44fb-b482-4569-be03-5ff37c7ec04f")
+		(property "Sheetname" "ledsub_23"
+			(at 99.06 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 99.06 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 121.92 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b22ba824-731a-40d1-b559-2c52848aafe1")
+		)
+		(pin "DOUT" output
+			(at 99.06 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8b6747ed-3283-4491-8cce-ef404b566f78")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "27")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 99.06)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2af11d9f-0faa-42ab-b4b8-5767908cf4b4")
+		(property "Sheetname" "ledsub_19"
+			(at 212.09 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 212.09 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 234.95 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "6b12a07e-0971-440e-8cd9-edf729add05b")
+		)
+		(pin "DOUT" output
+			(at 212.09 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "f4ebc666-6ddf-445f-acfb-5e48a9933bf4")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "23")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 99.06)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2d351803-a951-49b1-936b-f3407b7af65e")
+		(property "Sheetname" "ledsub_22"
+			(at 127 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 127 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 149.86 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "794724c2-22ff-4606-a6d4-6e69b7e951e7")
+		)
+		(pin "DOUT" output
+			(at 127 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "a99de226-931c-4bd3-8043-ac18c841ea4e")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "26")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 114.3)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "373355db-151c-4aba-97b5-d2d67f7b8595")
+		(property "Sheetname" "ledsub_27"
+			(at 125.73 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 125.73 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 125.73 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c27414b2-4fba-4e7b-94b1-580441cccedb")
+		)
+		(pin "DOUT" output
+			(at 148.59 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b14c1573-3972-4d56-ba03-045529e8d138")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "31")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 154.94 99.06)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3effd706-b85b-4b92-881c-50e75767ad87")
+		(property "Sheetname" "ledsub_21"
+			(at 154.94 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 154.94 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 177.8 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "810dabdc-b222-4c68-b3a2-3d3a9d61a450")
+		)
+		(pin "DOUT" output
+			(at 154.94 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "76244ad8-61b8-44cf-beb6-917d9068edf1")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "25")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 114.3)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3f265ef2-0d4c-4497-9599-791998c75c1d")
+		(property "Sheetname" "ledsub_25"
+			(at 68.58 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 68.58 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 68.58 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "8caa447f-4502-4b4c-a32d-c81c6dd1fb2d")
+		)
+		(pin "DOUT" output
+			(at 91.44 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "653d67f1-2f8c-4098-9efb-3cd2fca6809e")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "29")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 64.77)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "49390c7a-2128-4f61-beed-8dc7ffc01497")
+		(property "Sheetname" "ledsub_7"
+			(at 212.09 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 212.09 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 234.95 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "be95a52f-cdd2-4453-a78b-c7155a37cac7")
+		)
+		(pin "DOUT" output
+			(at 212.09 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9ab36d8d-6c78-4d16-b079-9a72647f9f3d")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 114.3)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "59f46179-eaa3-49e4-b6f7-ba9513cbb4c9")
+		(property "Sheetname" "ledsub_26"
+			(at 97.79 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 97.79 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 97.79 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "13685d03-c226-49b6-aca5-1b65aea6e6f0")
+		)
+		(pin "DOUT" output
+			(at 120.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ff2d8fe3-22e9-43c5-9e3c-0f50fa672355")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "30")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 81.28)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "62e7a1dc-740d-4e4a-8234-4648feaff875")
+		(property "Sheetname" "ledsub_14"
+			(at 97.79 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 97.79 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 97.79 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "34039315-a499-4f42-80d3-a8017d26a16d")
+		)
+		(pin "DOUT" output
+			(at 120.65 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c21188c2-125f-4ac6-ac91-34296d01b1d8")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 132.08)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "668d5b9c-1612-44ec-b636-be70df38776f")
+		(property "Sheetname" "ledsub_34"
+			(at 127 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 127 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 149.86 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "576bebd8-72b6-402f-9d6f-e8d8717c4d4a")
+		)
+		(pin "DOUT" output
+			(at 127 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "553f7f62-dbbc-484f-b6b7-7024bce5d0aa")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "38")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 153.67 114.3)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7064f8e4-7de6-43dd-a81f-2f3f9a1a0f75")
+		(property "Sheetname" "ledsub_28"
+			(at 153.67 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 153.67 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 153.67 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ce317913-ee90-4d76-ae5b-24a318a86908")
+		)
+		(pin "DOUT" output
+			(at 176.53 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2a625d62-227e-4fa9-b5de-fe2bf33207f3")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "32")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.88 132.08)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7af859dd-a8bd-422c-840a-19be4da4f714")
+		(property "Sheetname" "ledsub_32"
+			(at 182.88 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 182.88 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 205.74 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "d80874a3-8f28-4d74-b022-aba5612167ab")
+		)
+		(pin "DOUT" output
+			(at 182.88 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d1cd84c1-307f-419a-8c0a-0caa5bc07717")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "36")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 81.28)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7bfe7337-3231-4693-a467-e1de441cb632")
+		(property "Sheetname" "ledsub_13"
+			(at 68.58 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 68.58 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 68.58 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "978101c9-f743-4cb2-b77f-d8deacd4afc0")
+		)
+		(pin "DOUT" output
+			(at 91.44 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "14284a6b-8726-4539-a20e-68e0bfdd56ad")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "17")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 99.06 64.77)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "82f5945d-d9a1-4b8d-b260-7659bc126cab")
+		(property "Sheetname" "ledsub_11"
+			(at 99.06 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 99.06 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 121.92 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "36e083a0-ff4d-49d6-bf46-d82301003d8d")
+		)
+		(pin "DOUT" output
+			(at 99.06 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9e1760a3-e2ec-4099-9c78-edbcca9cc3f9")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 132.08)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87289c29-58df-42ab-a67e-edfae930b805")
+		(property "Sheetname" "ledsub_31"
+			(at 212.09 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 212.09 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 234.95 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "4e91d86c-8e88-4395-b487-88300ce95cdc")
+		)
+		(pin "DOUT" output
+			(at 212.09 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3a946067-82cc-4806-9a71-0956f8841cc8")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "35")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 46.99)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "93c1b363-d575-4f58-b147-315e050d95c9")
+		(property "Sheetname" "ledsub_1"
+			(at 68.58 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 68.58 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 68.58 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "2c0549fa-6226-476b-88c1-446835d2c378")
+		)
+		(pin "DOUT" output
+			(at 91.44 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "97b28645-b1f3-405c-8681-29ccf74969a5")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 81.28)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9a34d8c1-8ed0-4b3c-8d13-f11bb7c22474")
+		(property "Sheetname" "ledsub_18"
+			(at 212.09 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 212.09 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 212.09 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "05162080-0a4a-4bc7-ae54-d2aa777f33c9")
+		)
+		(pin "DOUT" output
+			(at 234.95 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2311eff6-dc01-4400-a62b-e6466e76ceca")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 81.28)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9b85575f-19bc-4ba3-b6b5-7fecdf4e9fef")
+		(property "Sheetname" "ledsub_17"
+			(at 181.61 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 181.61 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 181.61 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "98afbc74-9fce-4b9a-b67a-2b88caee2ea0")
+		)
+		(pin "DOUT" output
+			(at 204.47 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "0a6878b1-d4e5-4894-af6f-60d3dc533a0d")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 114.3)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a0504e1a-e67f-418a-889b-4337c7e196e1")
+		(property "Sheetname" "ledsub_29"
+			(at 181.61 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 181.61 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 181.61 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "6f11914b-e2fa-4567-83de-25019f0de153")
+		)
+		(pin "DOUT" output
+			(at 204.47 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "edb4e050-0677-45fb-aca1-1b964e004b9a")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "33")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 46.99)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a28e2b62-44a6-4d70-b85c-f0463ff2a08d")
+		(property "Sheetname" "ledsub_6"
+			(at 212.09 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 212.09 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 212.09 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "d32e1c02-7681-4e41-8e3b-2aff3ca86238")
+		)
+		(pin "DOUT" output
+			(at 234.95 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "965d1894-0e75-45be-9b4a-6c403e5d1587")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 99.06)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b680478b-4fed-40e1-8539-60506a460fe9")
+		(property "Sheetname" "ledsub_24"
+			(at 68.58 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 68.58 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 91.44 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "b27a2e97-6478-494c-bc0a-cb05457e53da")
+		)
+		(pin "DOUT" output
+			(at 68.58 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "b7d0ff7f-e727-4baf-b329-7575e92960da")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "28")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.88 99.06)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ba519203-66a3-436b-9f20-3248c93e216f")
+		(property "Sheetname" "ledsub_20"
+			(at 182.88 98.3484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 182.88 107.2646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 205.74 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "08e12013-1b5f-4158-b167-3b772ac3aa38")
+		)
+		(pin "DOUT" output
+			(at 182.88 102.87 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "5e762cf0-0b59-41e8-b615-ce7bcda5e686")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "24")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 212.09 114.3)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c4250e11-97ab-401a-a272-a2d7b3195b51")
+		(property "Sheetname" "ledsub_30"
+			(at 212.09 113.5884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 212.09 122.5046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 212.09 118.11 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "4b3f9d51-1a38-4bdd-8be2-1dbb23330297")
+		)
+		(pin "DOUT" output
+			(at 234.95 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "a8cba3d9-6258-46b3-bcbb-5e96ef6acca2")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "34")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 46.99)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d1510bf5-1b34-4dfb-bba3-b9e42b414b34")
+		(property "Sheetname" "ledsub_2"
+			(at 97.79 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 97.79 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 97.79 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "46122c7d-25d4-410e-a896-d314e9fccc2f")
+		)
+		(pin "DOUT" output
+			(at 120.65 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "451669ae-7426-43ac-a870-218d46e6af87")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 181.61 46.99)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d1a2181e-4b0c-4fb2-aa42-b957f325c7c1")
+		(property "Sheetname" "ledsub_5"
+			(at 181.61 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 181.61 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 181.61 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c7969c92-0411-4254-8b6f-677f8357d402")
+		)
+		(pin "DOUT" output
+			(at 204.47 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "45418809-b220-4424-983e-733fb9c70371")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 81.28)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dda32f6f-a207-4cc0-b72f-878077d3adf1")
+		(property "Sheetname" "ledsub_15"
+			(at 125.73 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 125.73 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 125.73 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9a47796f-7d48-43e4-a35d-ef153e097b59")
+		)
+		(pin "DOUT" output
+			(at 148.59 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "ed5315f6-7e5a-46f5-8505-c6913ee7ec7b")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "19")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 153.67 81.28)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dfd45a3c-e6e5-4f6d-a104-9e255c3a7199")
+		(property "Sheetname" "ledsub_16"
+			(at 153.67 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 153.67 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 153.67 85.09 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "0c12f6fc-4a3e-4290-8b16-ef6e83a14fd7")
+		)
+		(pin "DOUT" output
+			(at 176.53 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "8df982e2-d6a0-433c-a935-929d9fb3846f")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 68.58 132.08)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e263debb-7a56-4e7e-8daf-4f5b3179185e")
+		(property "Sheetname" "ledsub_36"
+			(at 68.58 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 68.58 140.2846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 91.44 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "12a02923-616c-410d-8234-fbcb5f920bc4")
+		)
+		(pin "DOUT" output
+			(at 68.58 135.89 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "62e8e109-3859-481c-a7bc-1095af86676b")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "40")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 153.67 46.99)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e61d525f-2d58-4a36-93c4-e833410ef089")
+		(property "Sheetname" "ledsub_4"
+			(at 153.67 46.2784 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 153.67 55.1946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 153.67 50.8 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9e7d2521-192e-4d3b-b33a-9daf33fad25e")
+		)
+		(pin "DOUT" output
+			(at 176.53 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "2e57ebf6-d20d-4319-b581-a936c7355680")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 182.88 64.77)
+		(size 22.86 7.62)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f3cf233f-273c-4a44-8d68-4be993949790")
+		(property "Sheetname" "ledsub_8"
+			(at 182.88 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ledsub.kicad_sch"
+			(at 182.88 72.9746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 205.74 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "092e67ec-f910-4a88-88d4-49c2e5f1f3f7")
+		)
+		(pin "DOUT" output
+			(at 182.88 68.58 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "20b382cd-a1e3-47c6-afc1-1a7b6c6d003d")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80/5d8cbbad-9a8a-47b9-976a-c32e026d92ff"
+					(page "12")
+				)
+			)
+		)
+	)
+)

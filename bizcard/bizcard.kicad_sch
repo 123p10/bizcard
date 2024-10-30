@@ -1,0 +1,137 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7f3f26e1-61db-49d8-a68c-f315156bfd80")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 52.07 64.77)
+		(size 34.29 30.48)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "44218ed6-259b-44ea-a816-d68b92b94e5f")
+		(property "Sheetname" "usb"
+			(at 52.07 64.0584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "usb.kicad_sch"
+			(at 52.07 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 204.47 63.5)
+		(size 20.32 4.445)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d8cbbad-9a8a-47b9-976a-c32e026d92ff")
+		(property "Sheetname" "led"
+			(at 204.47 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 204.47 68.5296 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 204.47 66.04 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ed9d2418-13de-4ae0-8140-934b0dc22f44")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 63.5)
+		(size 44.45 31.75)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "81149349-e467-4e1f-9116-ec8c433504f1")
+		(property "Sheetname" "micro"
+			(at 124.46 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "micro.kicad_sch"
+			(at 124.46 95.8346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
