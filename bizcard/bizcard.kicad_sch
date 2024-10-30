@@ -5,46 +5,18 @@
 	(uuid "7f3f26e1-61db-49d8-a68c-f315156bfd80")
 	(paper "A4")
 	(lib_symbols)
-	(sheet
-		(at 52.07 64.77)
-		(size 34.29 30.48)
-		(fields_autoplaced yes)
+	(wire
+		(pts
+			(xy 121.92 71.12) (xy 137.16 71.12)
+		)
 		(stroke
-			(width 0.1524)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "44218ed6-259b-44ea-a816-d68b92b94e5f")
-		(property "Sheetname" "usb"
-			(at 52.07 64.0584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "usb.kicad_sch"
-			(at 52.07 95.8346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "bizcard"
-				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80"
-					(page "3")
-				)
-			)
-		)
+		(uuid "328848e4-0689-4efd-88c7-bf8c8b138d42")
 	)
 	(sheet
-		(at 204.47 63.5)
+		(at 137.16 68.58)
 		(size 20.32 4.445)
 		(fields_autoplaced yes)
 		(stroke
@@ -56,7 +28,7 @@
 		)
 		(uuid "5d8cbbad-9a8a-47b9-976a-c32e026d92ff")
 		(property "Sheetname" "led"
-			(at 204.47 62.7884 0)
+			(at 137.16 67.8684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -65,7 +37,7 @@
 			)
 		)
 		(property "Sheetfile" "led.kicad_sch"
-			(at 204.47 68.5296 0)
+			(at 137.16 73.6096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -74,7 +46,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 204.47 66.04 180)
+			(at 137.16 71.12 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -92,8 +64,8 @@
 		)
 	)
 	(sheet
-		(at 124.46 63.5)
-		(size 44.45 31.75)
+		(at 95.25 68.58)
+		(size 26.67 5.715)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -104,7 +76,7 @@
 		)
 		(uuid "81149349-e467-4e1f-9116-ec8c433504f1")
 		(property "Sheetname" "micro"
-			(at 124.46 62.7884 0)
+			(at 95.25 67.8684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -113,13 +85,23 @@
 			)
 		)
 		(property "Sheetfile" "micro.kicad_sch"
-			(at 124.46 95.8346 0)
+			(at 95.25 74.8796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
 			)
+		)
+		(pin "LED_DOUT" output
+			(at 121.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7236eaa2-4601-47be-a1ce-4ad5bb7543cf")
 		)
 		(instances
 			(project "bizcard"
