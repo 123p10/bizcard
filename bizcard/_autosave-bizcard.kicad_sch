@@ -1,0 +1,119 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "7f3f26e1-61db-49d8-a68c-f315156bfd80")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 121.92 71.12) (xy 137.16 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "328848e4-0689-4efd-88c7-bf8c8b138d42")
+	)
+	(sheet
+		(at 137.16 68.58)
+		(size 20.32 4.445)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5d8cbbad-9a8a-47b9-976a-c32e026d92ff")
+		(property "Sheetname" "led"
+			(at 137.16 67.8684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led.kicad_sch"
+			(at 137.16 73.6096 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DIN" input
+			(at 137.16 71.12 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "ed9d2418-13de-4ae0-8140-934b0dc22f44")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 68.58)
+		(size 26.67 5.715)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "81149349-e467-4e1f-9116-ec8c433504f1")
+		(property "Sheetname" "micro"
+			(at 95.25 67.8684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "micro.kicad_sch"
+			(at 95.25 74.8796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LED_DOUT" output
+			(at 121.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "7236eaa2-4601-47be-a1ce-4ad5bb7543cf")
+		)
+		(instances
+			(project "bizcard"
+				(path "/7f3f26e1-61db-49d8-a68c-f315156bfd80"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
