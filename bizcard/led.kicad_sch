@@ -652,7 +652,7 @@
 		)
 	)
 	(sheet
-		(at 154.94 132.08)
+		(at 127 132.08)
 		(size 22.86 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -664,7 +664,7 @@
 		)
 		(uuid "07888c57-525e-47ba-9cf9-19a694a4c400")
 		(property "Sheetname" "ledsub_33"
-			(at 154.94 131.3684 0)
+			(at 127 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -673,7 +673,7 @@
 			)
 		)
 		(property "Sheetfile" "ledsub.kicad_sch"
-			(at 154.94 140.2846 0)
+			(at 127 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -682,7 +682,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 177.8 135.89 0)
+			(at 149.86 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -692,7 +692,7 @@
 			(uuid "ce8bf1c7-b356-4ad6-aa8f-246945d2c7f2")
 		)
 		(pin "DOUT" output
-			(at 154.94 135.89 180)
+			(at 127 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -710,7 +710,7 @@
 		)
 	)
 	(sheet
-		(at 99.06 132.08)
+		(at 182.88 132.08)
 		(size 22.86 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -722,7 +722,7 @@
 		)
 		(uuid "17acfebc-990f-42a7-8281-1633462317e4")
 		(property "Sheetname" "ledsub_35"
-			(at 99.06 131.3684 0)
+			(at 182.88 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -731,7 +731,7 @@
 			)
 		)
 		(property "Sheetfile" "ledsub.kicad_sch"
-			(at 99.06 140.2846 0)
+			(at 182.88 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -740,7 +740,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 121.92 135.89 0)
+			(at 205.74 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -750,7 +750,7 @@
 			(uuid "f2f3ed0b-4b20-4b8b-9ee4-69b6bf3d8adc")
 		)
 		(pin "DOUT" output
-			(at 99.06 135.89 180)
+			(at 182.88 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1348,7 +1348,7 @@
 		)
 	)
 	(sheet
-		(at 127 132.08)
+		(at 154.94 132.08)
 		(size 22.86 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -1360,7 +1360,7 @@
 		)
 		(uuid "668d5b9c-1612-44ec-b636-be70df38776f")
 		(property "Sheetname" "ledsub_34"
-			(at 127 131.3684 0)
+			(at 154.94 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,7 +1369,7 @@
 			)
 		)
 		(property "Sheetfile" "ledsub.kicad_sch"
-			(at 127 140.2846 0)
+			(at 154.94 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1378,7 +1378,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 149.86 135.89 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1388,7 +1388,7 @@
 			(uuid "576bebd8-72b6-402f-9d6f-e8d8717c4d4a")
 		)
 		(pin "DOUT" output
-			(at 127 135.89 180)
+			(at 154.94 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1464,7 +1464,7 @@
 		)
 	)
 	(sheet
-		(at 182.88 132.08)
+		(at 99.06 132.08)
 		(size 22.86 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -1476,7 +1476,7 @@
 		)
 		(uuid "7af859dd-a8bd-422c-840a-19be4da4f714")
 		(property "Sheetname" "ledsub_32"
-			(at 182.88 131.3684 0)
+			(at 99.06 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1485,7 +1485,7 @@
 			)
 		)
 		(property "Sheetfile" "ledsub.kicad_sch"
-			(at 182.88 140.2846 0)
+			(at 99.06 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1494,7 +1494,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 205.74 135.89 0)
+			(at 121.92 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1504,7 +1504,7 @@
 			(uuid "d80874a3-8f28-4d74-b022-aba5612167ab")
 		)
 		(pin "DOUT" output
-			(at 182.88 135.89 180)
+			(at 99.06 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1638,7 +1638,7 @@
 		)
 	)
 	(sheet
-		(at 212.09 132.08)
+		(at 68.58 132.08)
 		(size 22.86 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -1650,7 +1650,7 @@
 		)
 		(uuid "87289c29-58df-42ab-a67e-edfae930b805")
 		(property "Sheetname" "ledsub_31"
-			(at 212.09 131.3684 0)
+			(at 68.58 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1659,7 +1659,7 @@
 			)
 		)
 		(property "Sheetfile" "ledsub.kicad_sch"
-			(at 212.09 140.2846 0)
+			(at 68.58 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1668,7 +1668,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 234.95 135.89 0)
+			(at 91.44 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1678,7 +1678,7 @@
 			(uuid "4e91d86c-8e88-4395-b487-88300ce95cdc")
 		)
 		(pin "DOUT" output
-			(at 212.09 135.89 180)
+			(at 68.58 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2392,7 +2392,7 @@
 		)
 	)
 	(sheet
-		(at 68.58 132.08)
+		(at 212.09 132.08)
 		(size 22.86 7.62)
 		(fields_autoplaced yes)
 		(stroke
@@ -2404,7 +2404,7 @@
 		)
 		(uuid "e263debb-7a56-4e7e-8daf-4f5b3179185e")
 		(property "Sheetname" "ledsub_36"
-			(at 68.58 131.3684 0)
+			(at 212.09 131.3684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,7 +2413,7 @@
 			)
 		)
 		(property "Sheetfile" "ledsub.kicad_sch"
-			(at 68.58 140.2846 0)
+			(at 212.09 140.2846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2422,7 +2422,7 @@
 			)
 		)
 		(pin "DIN" input
-			(at 91.44 135.89 0)
+			(at 234.95 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,7 +2432,7 @@
 			(uuid "12a02923-616c-410d-8234-fbcb5f920bc4")
 		)
 		(pin "DOUT" output
-			(at 68.58 135.89 180)
+			(at 212.09 135.89 180)
 			(effects
 				(font
 					(size 1.27 1.27)
