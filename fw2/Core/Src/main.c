@@ -111,19 +111,26 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+	uint32_t x = 0;
   while (1)
   {
     /* USER CODE END WHILE */
-
     /* USER CODE BEGIN 3 */
-    ws2811_tx(buff, WS2811_BUFF_LEN);
-    if (buff[0][0].red == 0) {
-		buff[0][0].red = 20;
-	} else {
-		buff[0][0].red = 0;
+    x = x + 1;
+	if(x > 1000) {
+		x = 0;
 	}
+    for(uint32_t a = 0; a < NUMBER_LEDS;a++) {
+		buff[0][a].red = 0;
+		buff[0][a].blue = 0;
+		buff[0][a].green = 0;
+		if (x / 10 == a) {
+			buff[0][a].blue = 50;
+		}
+	}
+    ws2811_tx(buff, WS2811_BUFF_LEN);
     ws2811_trigger();
-    HAL_Delay(500);
+    HAL_Delay(10);
   }
   /* USER CODE END 3 */
 }
