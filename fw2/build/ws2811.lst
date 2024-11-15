@@ -1,0 +1,616 @@
+ARM GAS  /tmp/cclxUoCK.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"ws2811.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Core/Src/ws2811.c"
+  18              		.section	.text.ws2811_tx,"ax",%progbits
+  19              		.align	1
+  20              		.global	ws2811_tx
+  21              		.syntax unified
+  22              		.code	16
+  23              		.thumb_func
+  25              	ws2811_tx:
+  26              	.LVL0:
+  27              	.LFB40:
+   1:Core/Src/ws2811.c **** #include "ws2811.h"
+   2:Core/Src/ws2811.c **** #include "main.h"
+   3:Core/Src/ws2811.c **** #include "string.h"
+   4:Core/Src/ws2811.c **** #include "stm32f0xx_hal_spi.h"
+   5:Core/Src/ws2811.c **** 
+   6:Core/Src/ws2811.c **** #define BITS (4)
+   7:Core/Src/ws2811.c **** #define BYTES_PER_LED (3)
+   8:Core/Src/ws2811.c **** #define BUFF_SIZE (NUMBER_LEDS*BYTES_PER_LED*WS2811_BUFF_LEN)
+   9:Core/Src/ws2811.c **** extern SPI_HandleTypeDef hspi1;
+  10:Core/Src/ws2811.c **** 
+  11:Core/Src/ws2811.c **** static uint8_t ws2811_bkup_buffer[BUFF_SIZE];
+  12:Core/Src/ws2811.c **** static uint8_t ws2811_buffer[BUFF_SIZE];
+  13:Core/Src/ws2811.c **** 
+  14:Core/Src/ws2811.c **** static volatile uint32_t spi_index = 0;
+  15:Core/Src/ws2811.c **** 
+  16:Core/Src/ws2811.c **** ws2811_ret_E ws2811_tx(led_code_S (*led_timeseries)[NUMBER_LEDS], uint32_t n) {
+  28              		.loc 1 16 79 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 16 79 is_stmt 0 view .LVU1
+  33 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 20
+  36              		.cfi_offset 4, -20
+  37              		.cfi_offset 5, -16
+  38              		.cfi_offset 6, -12
+  39              		.cfi_offset 7, -8
+  40              		.cfi_offset 14, -4
+  41 0002 C646     		mov	lr, r8
+  42 0004 00B5     		push	{lr}
+ARM GAS  /tmp/cclxUoCK.s 			page 2
+
+
+  43              	.LCFI1:
+  44              		.cfi_def_cfa_offset 24
+  45              		.cfi_offset 8, -24
+  46 0006 8046     		mov	r8, r0
+  17:Core/Src/ws2811.c **** 	for (uint32_t i = 0; i < n; i++) {
+  47              		.loc 1 17 2 is_stmt 1 view .LVU2
+  48              	.LBB2:
+  49              		.loc 1 17 7 view .LVU3
+  50              	.LVL1:
+  51              		.loc 1 17 16 is_stmt 0 view .LVU4
+  52 0008 0022     		movs	r2, #0
+  53              	.LVL2:
+  54              	.L2:
+  55              		.loc 1 17 25 is_stmt 1 discriminator 1 view .LVU5
+  56 000a 8A42     		cmp	r2, r1
+  57 000c 1CD3     		bcc	.L5
+  58              	.LBE2:
+  18:Core/Src/ws2811.c **** 		for (uint32_t j = 0; j < NUMBER_LEDS; j++) {
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 0] = led_timeseries[i][j].r
+  20:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  21:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 2] = led_timeseries[i][j].b
+  22:Core/Src/ws2811.c **** 		}
+  23:Core/Src/ws2811.c **** 	}
+  24:Core/Src/ws2811.c **** 	return WS2811_RET_OK;
+  59              		.loc 1 24 2 view .LVU6
+  25:Core/Src/ws2811.c **** }
+  60              		.loc 1 25 1 is_stmt 0 view .LVU7
+  61 000e 0020     		movs	r0, #0
+  62              		@ sp needed
+  63              	.LVL3:
+  64              		.loc 1 25 1 view .LVU8
+  65 0010 80BC     		pop	{r7}
+  66 0012 B846     		mov	r8, r7
+  67 0014 F0BD     		pop	{r4, r5, r6, r7, pc}
+  68              	.LVL4:
+  69              	.L3:
+  70              	.LBB5:
+  71              	.LBB3:
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  72              		.loc 1 19 4 is_stmt 1 view .LVU9
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  73              		.loc 1 19 92 is_stmt 0 view .LVU10
+  74 0016 5300     		lsls	r3, r2, #1
+  75 0018 9B18     		adds	r3, r3, r2
+  76 001a 4344     		add	r3, r3, r8
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  77              		.loc 1 19 53 view .LVU11
+  78 001c 1619     		adds	r6, r2, r4
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  79              		.loc 1 19 71 view .LVU12
+  80 001e 7500     		lsls	r5, r6, #1
+  81 0020 AD19     		adds	r5, r5, r6
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  82              		.loc 1 19 98 view .LVU13
+  83 0022 6600     		lsls	r6, r4, #1
+  84 0024 3619     		adds	r6, r6, r4
+  85 0026 F75C     		ldrb	r7, [r6, r3]
+ARM GAS  /tmp/cclxUoCK.s 			page 3
+
+
+  86 0028 BC46     		mov	ip, r7
+  19:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 1] = led_timeseries[i][j].g
+  87              		.loc 1 19 76 view .LVU14
+  88 002a 084F     		ldr	r7, .L6
+  89 002c 6046     		mov	r0, ip
+  90 002e 7855     		strb	r0, [r7, r5]
+  20:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 2] = led_timeseries[i][j].b
+  91              		.loc 1 20 4 is_stmt 1 view .LVU15
+  20:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 2] = led_timeseries[i][j].b
+  92              		.loc 1 20 71 is_stmt 0 view .LVU16
+  93 0030 681C     		adds	r0, r5, #1
+  20:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 2] = led_timeseries[i][j].b
+  94              		.loc 1 20 98 view .LVU17
+  95 0032 9B19     		adds	r3, r3, r6
+  96 0034 5E78     		ldrb	r6, [r3, #1]
+  20:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 2] = led_timeseries[i][j].b
+  97              		.loc 1 20 76 view .LVU18
+  98 0036 3E54     		strb	r6, [r7, r0]
+  21:Core/Src/ws2811.c **** 		}
+  99              		.loc 1 21 4 is_stmt 1 view .LVU19
+  21:Core/Src/ws2811.c **** 		}
+ 100              		.loc 1 21 71 is_stmt 0 view .LVU20
+ 101 0038 0235     		adds	r5, r5, #2
+  21:Core/Src/ws2811.c **** 		}
+ 102              		.loc 1 21 98 view .LVU21
+ 103 003a 9B78     		ldrb	r3, [r3, #2]
+  21:Core/Src/ws2811.c **** 		}
+ 104              		.loc 1 21 76 view .LVU22
+ 105 003c 7B55     		strb	r3, [r7, r5]
+  18:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 0] = led_timeseries[i][j].r
+ 106              		.loc 1 18 42 is_stmt 1 discriminator 3 view .LVU23
+ 107 003e 0134     		adds	r4, r4, #1
+ 108              	.LVL5:
+ 109              	.L4:
+  18:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 0] = led_timeseries[i][j].r
+ 110              		.loc 1 18 26 discriminator 1 view .LVU24
+ 111 0040 002C     		cmp	r4, #0
+ 112 0042 E8D0     		beq	.L3
+ 113              	.LBE3:
+  17:Core/Src/ws2811.c **** 		for (uint32_t j = 0; j < NUMBER_LEDS; j++) {
+ 114              		.loc 1 17 31 discriminator 2 view .LVU25
+ 115 0044 0132     		adds	r2, r2, #1
+ 116              	.LVL6:
+  17:Core/Src/ws2811.c **** 		for (uint32_t j = 0; j < NUMBER_LEDS; j++) {
+ 117              		.loc 1 17 31 is_stmt 0 discriminator 2 view .LVU26
+ 118 0046 E0E7     		b	.L2
+ 119              	.LVL7:
+ 120              	.L5:
+ 121              	.LBB4:
+  18:Core/Src/ws2811.c **** 			ws2811_bkup_buffer[i * NUMBER_LEDS*BYTES_PER_LED + j*BYTES_PER_LED + 0] = led_timeseries[i][j].r
+ 122              		.loc 1 18 17 view .LVU27
+ 123 0048 0024     		movs	r4, #0
+ 124 004a F9E7     		b	.L4
+ 125              	.L7:
+ 126              		.align	2
+ 127              	.L6:
+ 128 004c 00000000 		.word	ws2811_bkup_buffer
+ARM GAS  /tmp/cclxUoCK.s 			page 4
+
+
+ 129              	.LBE4:
+ 130              	.LBE5:
+ 131              		.cfi_endproc
+ 132              	.LFE40:
+ 134              		.section	.text.ws2811_trigger,"ax",%progbits
+ 135              		.align	1
+ 136              		.global	ws2811_trigger
+ 137              		.syntax unified
+ 138              		.code	16
+ 139              		.thumb_func
+ 141              	ws2811_trigger:
+ 142              	.LFB41:
+  26:Core/Src/ws2811.c **** 
+  27:Core/Src/ws2811.c **** static volatile uint8_t spi_d[8*BYTES_PER_LED*NUMBER_LEDS*BITS];
+  28:Core/Src/ws2811.c **** static volatile uint8_t output_buff[BYTES_PER_LED*NUMBER_LEDS*BITS+3];
+  29:Core/Src/ws2811.c **** ws2811_ret_E ws2811_trigger(void) {
+ 143              		.loc 1 29 35 is_stmt 1 view -0
+ 144              		.cfi_startproc
+ 145              		@ args = 0, pretend = 0, frame = 0
+ 146              		@ frame_needed = 0, uses_anonymous_args = 0
+ 147 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ 148              	.LCFI2:
+ 149              		.cfi_def_cfa_offset 24
+ 150              		.cfi_offset 3, -24
+ 151              		.cfi_offset 4, -20
+ 152              		.cfi_offset 5, -16
+ 153              		.cfi_offset 6, -12
+ 154              		.cfi_offset 7, -8
+ 155              		.cfi_offset 14, -4
+  30:Core/Src/ws2811.c **** 	uint8_t* tmp = &ws2811_bkup_buffer[spi_index*BYTES_PER_LED*NUMBER_LEDS];
+ 156              		.loc 1 30 2 view .LVU29
+ 157              		.loc 1 30 60 is_stmt 0 view .LVU30
+ 158 0002 2A4B     		ldr	r3, .L21
+ 159 0004 1B68     		ldr	r3, [r3]
+ 160 0006 5D00     		lsls	r5, r3, #1
+ 161 0008 ED18     		adds	r5, r5, r3
+ 162              		.loc 1 30 11 view .LVU31
+ 163 000a 294B     		ldr	r3, .L21+4
+ 164 000c ED18     		adds	r5, r5, r3
+ 165              	.LVL8:
+  31:Core/Src/ws2811.c **** 	for(uint32_t i = 0;i < BYTES_PER_LED*NUMBER_LEDS;i++) {
+ 166              		.loc 1 31 2 is_stmt 1 view .LVU32
+ 167              	.LBB6:
+ 168              		.loc 1 31 6 view .LVU33
+ 169              		.loc 1 31 15 is_stmt 0 view .LVU34
+ 170 000e 0024     		movs	r4, #0
+ 171              		.loc 1 31 2 view .LVU35
+ 172 0010 23E0     		b	.L9
+ 173              	.LVL9:
+ 174              	.L11:
+ 175              	.LBB7:
+ 176              	.LBB8:
+ 177              	.LBB9:
+  32:Core/Src/ws2811.c **** 		uint8_t mask = 0x80;
+  33:Core/Src/ws2811.c **** 		output_buff[i] = 0;
+  34:Core/Src/ws2811.c **** 		for(uint8_t j = 0; j < 8; j++) {
+  35:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ARM GAS  /tmp/cclxUoCK.s 			page 5
+
+
+  36:Core/Src/ws2811.c **** 			if (bit == 0) {
+  37:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 0] = 0;
+  38:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+  39:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 2] = 0;
+  40:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 3] = 1;
+  41:Core/Src/ws2811.c **** 			} else {
+  42:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 0] = 0;
+ 178              		.loc 1 42 5 is_stmt 1 view .LVU36
+ 179              		.loc 1 42 14 is_stmt 0 view .LVU37
+ 180 0012 6201     		lsls	r2, r4, #5
+ 181              	.LVL10:
+ 182              		.loc 1 42 23 view .LVU38
+ 183 0014 9900     		lsls	r1, r3, #2
+ 184              		.loc 1 42 29 view .LVU39
+ 185 0016 5218     		adds	r2, r2, r1
+ 186              		.loc 1 42 34 view .LVU40
+ 187 0018 2649     		ldr	r1, .L21+8
+ 188 001a 0026     		movs	r6, #0
+ 189 001c 8E54     		strb	r6, [r1, r2]
+ 190              	.LVL11:
+  43:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+ 191              		.loc 1 43 5 is_stmt 1 view .LVU41
+ 192              		.loc 1 43 29 is_stmt 0 view .LVU42
+ 193 001e 571C     		adds	r7, r2, #1
+ 194              		.loc 1 43 34 view .LVU43
+ 195 0020 CE55     		strb	r6, [r1, r7]
+  44:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 2] = 1;
+ 196              		.loc 1 44 5 is_stmt 1 view .LVU44
+ 197              		.loc 1 44 29 is_stmt 0 view .LVU45
+ 198 0022 971C     		adds	r7, r2, #2
+ 199              		.loc 1 44 34 view .LVU46
+ 200 0024 0136     		adds	r6, r6, #1
+ 201 0026 CE55     		strb	r6, [r1, r7]
+  45:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 3] = 1;
+ 202              		.loc 1 45 5 is_stmt 1 view .LVU47
+ 203              		.loc 1 45 29 is_stmt 0 view .LVU48
+ 204 0028 0332     		adds	r2, r2, #3
+ 205              		.loc 1 45 34 view .LVU49
+ 206 002a 8E54     		strb	r6, [r1, r2]
+ 207              	.L12:
+  46:Core/Src/ws2811.c **** 			}
+  47:Core/Src/ws2811.c **** 			mask = mask >> 1;
+ 208              		.loc 1 47 4 is_stmt 1 view .LVU50
+ 209              		.loc 1 47 9 is_stmt 0 view .LVU51
+ 210 002c 4008     		lsrs	r0, r0, #1
+ 211              	.LVL12:
+ 212              		.loc 1 47 9 view .LVU52
+ 213              	.LBE9:
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 214              		.loc 1 34 30 is_stmt 1 discriminator 2 view .LVU53
+ 215 002e 0133     		adds	r3, r3, #1
+ 216              	.LVL13:
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 217              		.loc 1 34 30 is_stmt 0 discriminator 2 view .LVU54
+ 218 0030 DBB2     		uxtb	r3, r3
+ 219              	.LVL14:
+ 220              	.L10:
+ARM GAS  /tmp/cclxUoCK.s 			page 6
+
+
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 221              		.loc 1 34 24 is_stmt 1 discriminator 1 view .LVU55
+ 222 0032 072B     		cmp	r3, #7
+ 223 0034 10D8     		bhi	.L18
+ 224              	.LBB10:
+  35:Core/Src/ws2811.c **** 			if (bit == 0) {
+ 225              		.loc 1 35 4 view .LVU56
+  35:Core/Src/ws2811.c **** 			if (bit == 0) {
+ 226              		.loc 1 35 28 is_stmt 0 view .LVU57
+ 227 0036 2A5D     		ldrb	r2, [r5, r4]
+ 228              	.LVL15:
+  36:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 0] = 0;
+ 229              		.loc 1 36 4 is_stmt 1 view .LVU58
+  36:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 0] = 0;
+ 230              		.loc 1 36 7 is_stmt 0 view .LVU59
+ 231 0038 1042     		tst	r0, r2
+ 232 003a EAD1     		bne	.L11
+  37:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+ 233              		.loc 1 37 5 is_stmt 1 view .LVU60
+  37:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+ 234              		.loc 1 37 14 is_stmt 0 view .LVU61
+ 235 003c 6201     		lsls	r2, r4, #5
+ 236              	.LVL16:
+  37:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+ 237              		.loc 1 37 23 view .LVU62
+ 238 003e 9900     		lsls	r1, r3, #2
+  37:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+ 239              		.loc 1 37 29 view .LVU63
+ 240 0040 5218     		adds	r2, r2, r1
+  37:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 1] = 0;
+ 241              		.loc 1 37 34 view .LVU64
+ 242 0042 1C49     		ldr	r1, .L21+8
+ 243 0044 0026     		movs	r6, #0
+ 244 0046 8E54     		strb	r6, [r1, r2]
+ 245              	.LVL17:
+  38:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 2] = 0;
+ 246              		.loc 1 38 5 is_stmt 1 view .LVU65
+  38:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 2] = 0;
+ 247              		.loc 1 38 29 is_stmt 0 view .LVU66
+ 248 0048 571C     		adds	r7, r2, #1
+  38:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 2] = 0;
+ 249              		.loc 1 38 34 view .LVU67
+ 250 004a CE55     		strb	r6, [r1, r7]
+  39:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 3] = 1;
+ 251              		.loc 1 39 5 is_stmt 1 view .LVU68
+  39:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 3] = 1;
+ 252              		.loc 1 39 29 is_stmt 0 view .LVU69
+ 253 004c 971C     		adds	r7, r2, #2
+  39:Core/Src/ws2811.c **** 				spi_d[i*8*BITS + j*BITS + 3] = 1;
+ 254              		.loc 1 39 34 view .LVU70
+ 255 004e CE55     		strb	r6, [r1, r7]
+  40:Core/Src/ws2811.c **** 			} else {
+ 256              		.loc 1 40 5 is_stmt 1 view .LVU71
+  40:Core/Src/ws2811.c **** 			} else {
+ 257              		.loc 1 40 29 is_stmt 0 view .LVU72
+ 258 0050 0332     		adds	r2, r2, #3
+  40:Core/Src/ws2811.c **** 			} else {
+ARM GAS  /tmp/cclxUoCK.s 			page 7
+
+
+ 259              		.loc 1 40 34 view .LVU73
+ 260 0052 0136     		adds	r6, r6, #1
+ 261 0054 8E54     		strb	r6, [r1, r2]
+ 262 0056 E9E7     		b	.L12
+ 263              	.LVL18:
+ 264              	.L18:
+  40:Core/Src/ws2811.c **** 			} else {
+ 265              		.loc 1 40 34 view .LVU74
+ 266              	.LBE10:
+ 267              	.LBE8:
+ 268              	.LBE7:
+  31:Core/Src/ws2811.c **** 		uint8_t mask = 0x80;
+ 269              		.loc 1 31 52 is_stmt 1 discriminator 2 view .LVU75
+ 270 0058 0134     		adds	r4, r4, #1
+ 271              	.LVL19:
+ 272              	.L9:
+  31:Core/Src/ws2811.c **** 		uint8_t mask = 0x80;
+ 273              		.loc 1 31 23 discriminator 1 view .LVU76
+ 274 005a 022C     		cmp	r4, #2
+ 275 005c 05D8     		bhi	.L19
+ 276              	.LBB13:
+  32:Core/Src/ws2811.c **** 		output_buff[i] = 0;
+ 277              		.loc 1 32 3 view .LVU77
+ 278              	.LVL20:
+  33:Core/Src/ws2811.c **** 		for(uint8_t j = 0; j < 8; j++) {
+ 279              		.loc 1 33 3 view .LVU78
+  33:Core/Src/ws2811.c **** 		for(uint8_t j = 0; j < 8; j++) {
+ 280              		.loc 1 33 18 is_stmt 0 view .LVU79
+ 281 005e 164B     		ldr	r3, .L21+12
+ 282 0060 0022     		movs	r2, #0
+ 283 0062 1A55     		strb	r2, [r3, r4]
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 284              		.loc 1 34 3 is_stmt 1 view .LVU80
+ 285              	.LBB11:
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 286              		.loc 1 34 7 view .LVU81
+ 287              	.LVL21:
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 288              		.loc 1 34 15 is_stmt 0 view .LVU82
+ 289 0064 0023     		movs	r3, #0
+ 290              	.LBE11:
+  32:Core/Src/ws2811.c **** 		output_buff[i] = 0;
+ 291              		.loc 1 32 11 view .LVU83
+ 292 0066 8020     		movs	r0, #128
+ 293              	.LBB12:
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 294              		.loc 1 34 3 view .LVU84
+ 295 0068 E3E7     		b	.L10
+ 296              	.LVL22:
+ 297              	.L19:
+  34:Core/Src/ws2811.c **** 			uint8_t bit = mask & tmp[i];
+ 298              		.loc 1 34 3 view .LVU85
+ 299              	.LBE12:
+ 300              	.LBE13:
+ 301              	.LBE6:
+ 302              	.LBB14:
+  48:Core/Src/ws2811.c **** 		}
+ARM GAS  /tmp/cclxUoCK.s 			page 8
+
+
+  49:Core/Src/ws2811.c **** 	}
+  50:Core/Src/ws2811.c **** 	uint32_t byte_i = 0;
+  51:Core/Src/ws2811.c **** 	uint8_t bit_i = 7;
+  52:Core/Src/ws2811.c **** 	for(uint32_t i = 0;i < 8*BYTES_PER_LED*NUMBER_LEDS*BITS;i++) {
+ 303              		.loc 1 52 15 view .LVU86
+ 304 006a 0021     		movs	r1, #0
+ 305              	.LBE14:
+  51:Core/Src/ws2811.c **** 	for(uint32_t i = 0;i < 8*BYTES_PER_LED*NUMBER_LEDS*BITS;i++) {
+ 306              		.loc 1 51 10 view .LVU87
+ 307 006c 0723     		movs	r3, #7
+  50:Core/Src/ws2811.c **** 	uint8_t bit_i = 7;
+ 308              		.loc 1 50 11 view .LVU88
+ 309 006e 0024     		movs	r4, #0
+ 310              	.LVL23:
+  50:Core/Src/ws2811.c **** 	uint8_t bit_i = 7;
+ 311              		.loc 1 50 11 view .LVU89
+ 312 0070 02E0     		b	.L15
+ 313              	.LVL24:
+ 314              	.L16:
+ 315              	.LBB15:
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+  54:Core/Src/ws2811.c **** 		if (bit_i == 0) {
+  55:Core/Src/ws2811.c **** 			bit_i = 8;
+  56:Core/Src/ws2811.c **** 			byte_i++;
+  57:Core/Src/ws2811.c **** 		}
+  58:Core/Src/ws2811.c **** 		bit_i--;
+ 316              		.loc 1 58 3 is_stmt 1 view .LVU90
+ 317              		.loc 1 58 8 is_stmt 0 view .LVU91
+ 318 0072 013B     		subs	r3, r3, #1
+ 319              	.LVL25:
+ 320              		.loc 1 58 8 view .LVU92
+ 321 0074 DBB2     		uxtb	r3, r3
+ 322              	.LVL26:
+  52:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 323              		.loc 1 52 59 is_stmt 1 discriminator 2 view .LVU93
+ 324 0076 0131     		adds	r1, r1, #1
+ 325              	.LVL27:
+ 326              	.L15:
+  52:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 327              		.loc 1 52 23 discriminator 1 view .LVU94
+ 328 0078 5F29     		cmp	r1, #95
+ 329 007a 0CD8     		bhi	.L20
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 330              		.loc 1 53 3 view .LVU95
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 331              		.loc 1 53 36 is_stmt 0 view .LVU96
+ 332 007c 0E4D     		ldr	r5, .L21+12
+ 333 007e 2A5D     		ldrb	r2, [r5, r4]
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 334              		.loc 1 53 53 view .LVU97
+ 335 0080 0C48     		ldr	r0, .L21+8
+ 336 0082 405C     		ldrb	r0, [r0, r1]
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 337              		.loc 1 53 57 view .LVU98
+ 338 0084 9840     		lsls	r0, r0, r3
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 339              		.loc 1 53 45 view .LVU99
+ARM GAS  /tmp/cclxUoCK.s 			page 9
+
+
+ 340 0086 0243     		orrs	r2, r0
+ 341 0088 D2B2     		uxtb	r2, r2
+  53:Core/Src/ws2811.c **** 		output_buff[byte_i] = output_buff[byte_i] | (spi_d[i] << bit_i);
+ 342              		.loc 1 53 23 view .LVU100
+ 343 008a 2A55     		strb	r2, [r5, r4]
+  54:Core/Src/ws2811.c **** 			bit_i = 8;
+ 344              		.loc 1 54 3 is_stmt 1 view .LVU101
+  54:Core/Src/ws2811.c **** 			bit_i = 8;
+ 345              		.loc 1 54 6 is_stmt 0 view .LVU102
+ 346 008c 002B     		cmp	r3, #0
+ 347 008e F0D1     		bne	.L16
+  55:Core/Src/ws2811.c **** 			byte_i++;
+ 348              		.loc 1 55 4 is_stmt 1 view .LVU103
+ 349              	.LVL28:
+  56:Core/Src/ws2811.c **** 		}
+ 350              		.loc 1 56 4 view .LVU104
+  56:Core/Src/ws2811.c **** 		}
+ 351              		.loc 1 56 10 is_stmt 0 view .LVU105
+ 352 0090 0134     		adds	r4, r4, #1
+ 353              	.LVL29:
+  55:Core/Src/ws2811.c **** 			byte_i++;
+ 354              		.loc 1 55 10 view .LVU106
+ 355 0092 0833     		adds	r3, r3, #8
+ 356 0094 EDE7     		b	.L16
+ 357              	.LVL30:
+ 358              	.L20:
+  55:Core/Src/ws2811.c **** 			byte_i++;
+ 359              		.loc 1 55 10 view .LVU107
+ 360              	.LBE15:
+  59:Core/Src/ws2811.c **** 	}
+  60:Core/Src/ws2811.c **** 	uint32_t last_i = sizeof(output_buff)-1;
+ 361              		.loc 1 60 2 is_stmt 1 view .LVU108
+  61:Core/Src/ws2811.c **** 	output_buff[last_i-2] = 0x00;
+ 362              		.loc 1 61 2 view .LVU109
+ 363              		.loc 1 61 24 is_stmt 0 view .LVU110
+ 364 0096 0849     		ldr	r1, .L21+12
+ 365              	.LVL31:
+ 366              		.loc 1 61 24 view .LVU111
+ 367 0098 0023     		movs	r3, #0
+ 368              	.LVL32:
+ 369              		.loc 1 61 24 view .LVU112
+ 370 009a 0B73     		strb	r3, [r1, #12]
+  62:Core/Src/ws2811.c **** 	output_buff[last_i-1] = 0x00;
+ 371              		.loc 1 62 2 is_stmt 1 view .LVU113
+ 372              		.loc 1 62 24 is_stmt 0 view .LVU114
+ 373 009c 4B73     		strb	r3, [r1, #13]
+  63:Core/Src/ws2811.c **** 	output_buff[last_i] = 0x00;
+ 374              		.loc 1 63 2 is_stmt 1 view .LVU115
+ 375              		.loc 1 63 22 is_stmt 0 view .LVU116
+ 376 009e 8B73     		strb	r3, [r1, #14]
+  64:Core/Src/ws2811.c **** 	HAL_SPI_Transmit_IT(&hspi1, output_buff, BYTES_PER_LED*NUMBER_LEDS*BITS+3);
+ 377              		.loc 1 64 2 is_stmt 1 view .LVU117
+ 378 00a0 0648     		ldr	r0, .L21+16
+ 379 00a2 0F22     		movs	r2, #15
+ 380 00a4 FFF7FEFF 		bl	HAL_SPI_Transmit_IT
+ 381              	.LVL33:
+  65:Core/Src/ws2811.c **** 	return WS2811_RET_OK;	
+ARM GAS  /tmp/cclxUoCK.s 			page 10
+
+
+ 382              		.loc 1 65 2 view .LVU118
+  66:Core/Src/ws2811.c **** }
+ 383              		.loc 1 66 1 is_stmt 0 view .LVU119
+ 384 00a8 0020     		movs	r0, #0
+ 385              		@ sp needed
+ 386              	.LVL34:
+ 387              		.loc 1 66 1 view .LVU120
+ 388 00aa F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 389              	.L22:
+ 390              		.align	2
+ 391              	.L21:
+ 392 00ac 00000000 		.word	spi_index
+ 393 00b0 00000000 		.word	ws2811_bkup_buffer
+ 394 00b4 00000000 		.word	spi_d
+ 395 00b8 00000000 		.word	output_buff
+ 396 00bc 00000000 		.word	hspi1
+ 397              		.cfi_endproc
+ 398              	.LFE41:
+ 400              		.section	.bss.output_buff,"aw",%nobits
+ 401              		.align	2
+ 404              	output_buff:
+ 405 0000 00000000 		.space	15
+ 405      00000000 
+ 405      00000000 
+ 405      000000
+ 406              		.section	.bss.spi_d,"aw",%nobits
+ 407              		.align	2
+ 410              	spi_d:
+ 411 0000 00000000 		.space	96
+ 411      00000000 
+ 411      00000000 
+ 411      00000000 
+ 411      00000000 
+ 412              		.section	.bss.spi_index,"aw",%nobits
+ 413              		.align	2
+ 416              	spi_index:
+ 417 0000 00000000 		.space	4
+ 418              		.section	.bss.ws2811_bkup_buffer,"aw",%nobits
+ 419              		.align	2
+ 422              	ws2811_bkup_buffer:
+ 423 0000 000000   		.space	3
+ 424              		.text
+ 425              	.Letext0:
+ 426              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 427              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 428              		.file 4 "Core/Inc/ws2811.h"
+ 429              		.file 5 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f042x6.h"
+ 430              		.file 6 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h"
+ 431              		.file 7 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
+ 432              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h"
+ARM GAS  /tmp/cclxUoCK.s 			page 11
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 ws2811.c
+     /tmp/cclxUoCK.s:19     .text.ws2811_tx:00000000 $t
+     /tmp/cclxUoCK.s:25     .text.ws2811_tx:00000000 ws2811_tx
+     /tmp/cclxUoCK.s:128    .text.ws2811_tx:0000004c $d
+     /tmp/cclxUoCK.s:422    .bss.ws2811_bkup_buffer:00000000 ws2811_bkup_buffer
+     /tmp/cclxUoCK.s:135    .text.ws2811_trigger:00000000 $t
+     /tmp/cclxUoCK.s:141    .text.ws2811_trigger:00000000 ws2811_trigger
+     /tmp/cclxUoCK.s:392    .text.ws2811_trigger:000000ac $d
+     /tmp/cclxUoCK.s:416    .bss.spi_index:00000000 spi_index
+     /tmp/cclxUoCK.s:410    .bss.spi_d:00000000 spi_d
+     /tmp/cclxUoCK.s:404    .bss.output_buff:00000000 output_buff
+     /tmp/cclxUoCK.s:401    .bss.output_buff:00000000 $d
+     /tmp/cclxUoCK.s:407    .bss.spi_d:00000000 $d
+     /tmp/cclxUoCK.s:413    .bss.spi_index:00000000 $d
+     /tmp/cclxUoCK.s:419    .bss.ws2811_bkup_buffer:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_SPI_Transmit_IT
+hspi1
