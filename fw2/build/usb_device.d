@@ -38,9 +38,9 @@ build/usb_device.o: USB_DEVICE/App/usb_device.c \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h \
  USB_DEVICE/App/usbd_desc.h \
- Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h \
+ Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h \
  Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h \
- USB_DEVICE/App/usbd_custom_hid_if.h
+ USB_DEVICE/App/usbd_cdc_if.h
 USB_DEVICE/App/usb_device.h:
 Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h:
 Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f042x6.h:
@@ -83,6 +83,6 @@ Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
 Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h:
 Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h:
 USB_DEVICE/App/usbd_desc.h:
-Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Inc/usbd_customhid.h:
+Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h:
 Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h:
-USB_DEVICE/App/usbd_custom_hid_if.h:
+USB_DEVICE/App/usbd_cdc_if.h:

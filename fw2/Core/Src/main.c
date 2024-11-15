@@ -23,10 +23,16 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "ws2811.h"
+#include "usbd_cdc_if.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN PTD */
+
+typedef enum {
+	USB_CONTROL_DATA = 0x55,
+	USB_CONTROL_ACK = 0x77
+} usb_control_E;
 
 /* USER CODE END PTD */
 
@@ -59,7 +65,24 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+static uint8_t ack_rsp[3] ={0x31, 0x41, 0x59};
+void usb_callback(uint8_t* buf, uint32_t* len) {
+	uint32_t l = *len;
+	if (l >= 1) {
+		uint8_t control = buf[0];
+		switch (control) {
+			case(USB_CONTROL_DATA): {
+				break;
+			}
+			case(USB_CONTROL_ACK): {
+				CDC_Transmit_FS(ack_rsp, sizeof(ack_rsp));
+				break;
+			}
+			default:
+				break;
+		}
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -95,14 +118,14 @@ int main(void)
   MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 	HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
-/*  if (HAL_TIM_Base_Start_IT(&htim2) != HAL_OK)
+  if (HAL_TIM_Base_Start_IT(&htim2) != HAL_OK)
   {
     Error_Handler();
-  }*/
+  }
   static led_code_S buff[WS2811_BUFF_LEN][NUMBER_LEDS];
   for(uint32_t i = 0; i < WS2811_BUFF_LEN; i++) {
 	for(uint32_t j = 0; j < NUMBER_LEDS;j++) {
-		buff[i][j].red =  0;
+		buff[i][j].red = i == 0 ? 20 : 0;
 		buff[i][j].blue = 0;
 		buff[i][j].green = 0;
 	}
@@ -111,26 +134,16 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	uint32_t x = 0;
   while (1)
   {
     /* USER CODE END WHILE */
+
     /* USER CODE BEGIN 3 */
-    x = x + 1;
-	if(x > 1000) {
-		x = 0;
-	}
-    for(uint32_t a = 0; a < NUMBER_LEDS;a++) {
-		buff[0][a].red = 0;
-		buff[0][a].blue = 0;
-		buff[0][a].green = 0;
-		if (x / 10 == a) {
-			buff[0][a].blue = 50;
-		}
-	}
+	uint8_t buffer[] = "Hello, World!\r\n";
+	CDC_Transmit_FS(buffer, sizeof(buffer));
+	HAL_Delay(1000);
     ws2811_tx(buff, WS2811_BUFF_LEN);
-    ws2811_trigger();
-    HAL_Delay(10);
+    HAL_Delay(200);
   }
   /* USER CODE END 3 */
 }

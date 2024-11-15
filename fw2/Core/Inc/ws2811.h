@@ -4,7 +4,7 @@
 #include "stdint.h"
 
 #define NUMBER_LEDS (36)
-#define WS2811_BUFF_LEN (1)
+#define WS2811_BUFF_LEN (2)
 
 typedef struct {
 	uint8_t red;

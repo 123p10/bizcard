@@ -30,7 +30,7 @@ ws2811_ret_E ws2811_trigger(void) {
 	for(uint32_t i = 0;i < sizeof(output_buff);i++) {
 		output_buff[i] = 0;
 	}
-	uint8_t* tmp = &ws2811_bkup_buffer[spi_index*BYTES_PER_LED*NUMBER_LEDS];
+	uint8_t* tmp = &ws2811_buffer[spi_index*BYTES_PER_LED*NUMBER_LEDS];
 	uint32_t byte_i = 0;
 	uint8_t bit_i = 7;
 	for(uint32_t i = 0;i < BYTES_PER_LED*NUMBER_LEDS;i++) {
@@ -64,5 +64,11 @@ ws2811_ret_E ws2811_trigger(void) {
 	output_buff[last_i-1] = 0x00;
 	output_buff[last_i] = 0x00;
 	HAL_SPI_Transmit_IT(&hspi1, output_buff, BYTES_PER_LED*NUMBER_LEDS*BITS+3);
+
+	spi_index++;
+	if (spi_index == WS2811_BUFF_LEN) {
+		spi_index = 0;
+		memcpy(ws2811_buffer, ws2811_bkup_buffer, BUFF_SIZE);
+	}
 	return WS2811_RET_OK;	
 }
