@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cctVSz2y.s 			page 1
+ARM GAS  /tmp/ccst2WgL.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
   30:Core/Src/main.c **** /* USER CODE BEGIN PTD */
   31:Core/Src/main.c **** 
   32:Core/Src/main.c **** typedef enum {
-ARM GAS  /tmp/cctVSz2y.s 			page 2
+ARM GAS  /tmp/ccst2WgL.s 			page 2
 
 
   33:Core/Src/main.c **** 	USB_CONTROL_ACK = 0x77,
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
   41              		.loc 1 72 2 is_stmt 1 view .LVU4
   42              		.loc 1 72 10 is_stmt 0 view .LVU5
   43 0004 8178     		ldrb	r1, [r0, #2]
-ARM GAS  /tmp/cctVSz2y.s 			page 3
+ARM GAS  /tmp/ccst2WgL.s 			page 3
 
 
   44              	.LVL2:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  104:Core/Src/main.c ****   /* USER CODE END 1 */
  105:Core/Src/main.c **** 
  106:Core/Src/main.c ****   /* MCU Configuration--------------------------------------------------------*/
-ARM GAS  /tmp/cctVSz2y.s 			page 4
+ARM GAS  /tmp/ccst2WgL.s 			page 4
 
 
  107:Core/Src/main.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  161:Core/Src/main.c **** {
  162:Core/Src/main.c ****   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
  163:Core/Src/main.c ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
-ARM GAS  /tmp/cctVSz2y.s 			page 5
+ARM GAS  /tmp/ccst2WgL.s 			page 5
 
 
  164:Core/Src/main.c ****   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  218:Core/Src/main.c **** 
  219:Core/Src/main.c **** /**
  220:Core/Src/main.c ****   * @brief SPI1 Initialization Function
-ARM GAS  /tmp/cctVSz2y.s 			page 6
+ARM GAS  /tmp/ccst2WgL.s 			page 6
 
 
  221:Core/Src/main.c ****   * @param None
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  275:Core/Src/main.c **** 
  276:Core/Src/main.c ****   /* USER CODE END TIM2_Init 1 */
  277:Core/Src/main.c ****   htim2.Instance = TIM2;
-ARM GAS  /tmp/cctVSz2y.s 			page 7
+ARM GAS  /tmp/ccst2WgL.s 			page 7
 
 
  278:Core/Src/main.c ****   htim2.Init.Prescaler = 999;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
   89              	.LVL6:
  312:Core/Src/main.c **** 
  313:Core/Src/main.c ****   /* GPIO Ports Clock Enable */
-ARM GAS  /tmp/cctVSz2y.s 			page 8
+ARM GAS  /tmp/ccst2WgL.s 			page 8
 
 
  314:Core/Src/main.c ****   __HAL_RCC_GPIOA_CLK_ENABLE();
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  322:Core/Src/main.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
  136              		.loc 1 322 3 is_stmt 1 view .LVU29
  137              		.loc 1 322 24 is_stmt 0 view .LVU30
-ARM GAS  /tmp/cctVSz2y.s 			page 9
+ARM GAS  /tmp/ccst2WgL.s 			page 9
 
 
  138 0046 3F3B     		subs	r3, r3, #63
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  185              		.loc 1 78 11 is_stmt 0 view .LVU40
  186 0002 0968     		ldr	r1, [r1]
  187              	.LVL10:
-ARM GAS  /tmp/cctVSz2y.s 			page 10
+ARM GAS  /tmp/ccst2WgL.s 			page 10
 
 
   79:Core/Src/main.c **** 		uint8_t control = buf[0];
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  228              	.L10:
  229 0022 C046     		.align	2
  230              	.L9:
-ARM GAS  /tmp/cctVSz2y.s 			page 11
+ARM GAS  /tmp/ccst2WgL.s 			page 11
 
 
  231 0024 00000000 		.word	ack_rsp
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
-ARM GAS  /tmp/cctVSz2y.s 			page 12
+ARM GAS  /tmp/ccst2WgL.s 			page 12
 
 
   23:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
   77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
-ARM GAS  /tmp/cctVSz2y.s 			page 13
+ARM GAS  /tmp/ccst2WgL.s 			page 13
 
 
   80:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  134:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  135:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
-ARM GAS  /tmp/cctVSz2y.s 			page 14
+ARM GAS  /tmp/ccst2WgL.s 			page 14
 
 
  137:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Disables IRQ interrupts by setting the I-bit in the CPSR.
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  236:Core/Src/main.c ****   hspi1.Init.Direction = SPI_DIRECTION_2LINES;
  296              		.loc 1 236 19 is_stmt 0 view .LVU66
  297 0008 8223     		movs	r3, #130
-ARM GAS  /tmp/cctVSz2y.s 			page 15
+ARM GAS  /tmp/ccst2WgL.s 			page 15
 
 
  298 000a 5B00     		lsls	r3, r3, #1
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  246:Core/Src/main.c ****   hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
  334              		.loc 1 246 3 is_stmt 1 view .LVU85
  246:Core/Src/main.c ****   hspi1.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
-ARM GAS  /tmp/cctVSz2y.s 			page 16
+ARM GAS  /tmp/ccst2WgL.s 			page 16
 
 
  335              		.loc 1 246 28 is_stmt 0 view .LVU86
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  381              		.cfi_def_cfa_offset 4
  382              		.cfi_offset 14, -4
  383 0002 87B0     		sub	sp, sp, #28
-ARM GAS  /tmp/cctVSz2y.s 			page 17
+ARM GAS  /tmp/ccst2WgL.s 			page 17
 
 
  384              	.LCFI6:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  422              		.loc 1 282 32 is_stmt 0 view .LVU112
  423 002e 8361     		str	r3, [r0, #24]
  283:Core/Src/main.c ****   {
-ARM GAS  /tmp/cctVSz2y.s 			page 18
+ARM GAS  /tmp/ccst2WgL.s 			page 18
 
 
  424              		.loc 1 283 3 is_stmt 1 view .LVU113
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  463              		@ sp needed
  464 005e 00BD     		pop	{pc}
  465              	.L22:
-ARM GAS  /tmp/cctVSz2y.s 			page 19
+ARM GAS  /tmp/ccst2WgL.s 			page 19
 
 
  285:Core/Src/main.c ****   }
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  515              		.loc 1 163 3 is_stmt 1 view .LVU135
  163:Core/Src/main.c ****   RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
  516              		.loc 1 163 22 is_stmt 0 view .LVU136
-ARM GAS  /tmp/cctVSz2y.s 			page 20
+ARM GAS  /tmp/ccst2WgL.s 			page 20
 
 
  517 0010 1022     		movs	r2, #16
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  175:Core/Src/main.c ****   RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL12;
  556              		.loc 1 175 35 is_stmt 0 view .LVU152
  557 0040 8022     		movs	r2, #128
-ARM GAS  /tmp/cctVSz2y.s 			page 21
+ARM GAS  /tmp/ccst2WgL.s 			page 21
 
 
  558 0042 1202     		lsls	r2, r2, #8
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  595 006a FFF7FEFF 		bl	HAL_RCC_ClockConfig
  596              	.LVL32:
  191:Core/Src/main.c ****   {
-ARM GAS  /tmp/cctVSz2y.s 			page 22
+ARM GAS  /tmp/ccst2WgL.s 			page 22
 
 
  597              		.loc 1 191 6 discriminator 1 view .LVU170
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  636              		.loc 1 209 31 is_stmt 0 view .LVU185
  637 009a 01A8     		add	r0, sp, #4
  638 009c 0023     		movs	r3, #0
-ARM GAS  /tmp/cctVSz2y.s 			page 23
+ARM GAS  /tmp/ccst2WgL.s 			page 23
 
 
  639 009e 0193     		str	r3, [sp, #4]
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  678              	.LVL37:
  679              	.L35:
  680              		.align	2
-ARM GAS  /tmp/cctVSz2y.s 			page 24
+ARM GAS  /tmp/ccst2WgL.s 			page 24
 
 
  681              	.L34:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  729 0020 FFF7FEFF 		bl	HAL_GPIO_WritePin
  730              	.LVL44:
  130:Core/Src/main.c ****   {
-ARM GAS  /tmp/cctVSz2y.s 			page 25
+ARM GAS  /tmp/ccst2WgL.s 			page 25
 
 
  731              		.loc 1 130 3 view .LVU209
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  136:Core/Src/main.c **** 		buff[i][j].red = i == 0 ? 20 : 0;
  774              		.loc 1 136 24 discriminator 1 view .LVU221
  775 0050 2329     		cmp	r1, #35
-ARM GAS  /tmp/cctVSz2y.s 			page 26
+ARM GAS  /tmp/ccst2WgL.s 			page 26
 
 
  776 0052 03D8     		bhi	.L46
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  822      00000000 
  822      00000000 
  822      00000000 
-ARM GAS  /tmp/cctVSz2y.s 			page 27
+ARM GAS  /tmp/ccst2WgL.s 			page 27
 
 
  823              		.section	.data.ack_rsp,"aw"
@@ -1601,41 +1601,41 @@ ARM GAS  /tmp/cctVSz2y.s 			page 1
  858              		.file 16 "USB_DEVICE/App/usbd_cdc_if.h"
  859              		.file 17 "USB_DEVICE/App/usb_device.h"
  860              		.file 18 "<built-in>"
-ARM GAS  /tmp/cctVSz2y.s 			page 28
+ARM GAS  /tmp/ccst2WgL.s 			page 28
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 main.c
-     /tmp/cctVSz2y.s:19     .text.parse_data:00000000 $t
-     /tmp/cctVSz2y.s:24     .text.parse_data:00000000 parse_data
-     /tmp/cctVSz2y.s:62     .text.MX_GPIO_Init:00000000 $t
-     /tmp/cctVSz2y.s:67     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
-     /tmp/cctVSz2y.s:159    .text.MX_GPIO_Init:0000005c $d
-     /tmp/cctVSz2y.s:165    .text.usb_callback:00000000 $t
-     /tmp/cctVSz2y.s:171    .text.usb_callback:00000000 usb_callback
-     /tmp/cctVSz2y.s:231    .text.usb_callback:00000024 $d
-     /tmp/cctVSz2y.s:827    .data.ack_rsp:00000000 ack_rsp
-     /tmp/cctVSz2y.s:236    .text.Error_Handler:00000000 $t
-     /tmp/cctVSz2y.s:242    .text.Error_Handler:00000000 Error_Handler
-     /tmp/cctVSz2y.s:274    .text.MX_SPI1_Init:00000000 $t
-     /tmp/cctVSz2y.s:279    .text.MX_SPI1_Init:00000000 MX_SPI1_Init
-     /tmp/cctVSz2y.s:362    .text.MX_SPI1_Init:00000048 $d
-     /tmp/cctVSz2y.s:841    .bss.hspi1:00000000 hspi1
-     /tmp/cctVSz2y.s:368    .text.MX_TIM2_Init:00000000 $t
-     /tmp/cctVSz2y.s:373    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
-     /tmp/cctVSz2y.s:480    .text.MX_TIM2_Init:0000006c $d
-     /tmp/cctVSz2y.s:834    .bss.htim2:00000000 htim2
-     /tmp/cctVSz2y.s:487    .text.SystemClock_Config:00000000 $t
-     /tmp/cctVSz2y.s:493    .text.SystemClock_Config:00000000 SystemClock_Config
-     /tmp/cctVSz2y.s:682    .text.SystemClock_Config:000000c8 $d
-     /tmp/cctVSz2y.s:688    .text.main:00000000 $t
-     /tmp/cctVSz2y.s:694    .text.main:00000000 main
-     /tmp/cctVSz2y.s:811    .text.main:00000070 $d
-     /tmp/cctVSz2y.s:821    .bss.buff.0:00000000 buff.0
-     /tmp/cctVSz2y.s:818    .bss.buff.0:00000000 $d
-     /tmp/cctVSz2y.s:824    .data.ack_rsp:00000000 $d
-     /tmp/cctVSz2y.s:831    .bss.htim2:00000000 $d
-     /tmp/cctVSz2y.s:838    .bss.hspi1:00000000 $d
+     /tmp/ccst2WgL.s:19     .text.parse_data:00000000 $t
+     /tmp/ccst2WgL.s:24     .text.parse_data:00000000 parse_data
+     /tmp/ccst2WgL.s:62     .text.MX_GPIO_Init:00000000 $t
+     /tmp/ccst2WgL.s:67     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+     /tmp/ccst2WgL.s:159    .text.MX_GPIO_Init:0000005c $d
+     /tmp/ccst2WgL.s:165    .text.usb_callback:00000000 $t
+     /tmp/ccst2WgL.s:171    .text.usb_callback:00000000 usb_callback
+     /tmp/ccst2WgL.s:231    .text.usb_callback:00000024 $d
+     /tmp/ccst2WgL.s:827    .data.ack_rsp:00000000 ack_rsp
+     /tmp/ccst2WgL.s:236    .text.Error_Handler:00000000 $t
+     /tmp/ccst2WgL.s:242    .text.Error_Handler:00000000 Error_Handler
+     /tmp/ccst2WgL.s:274    .text.MX_SPI1_Init:00000000 $t
+     /tmp/ccst2WgL.s:279    .text.MX_SPI1_Init:00000000 MX_SPI1_Init
+     /tmp/ccst2WgL.s:362    .text.MX_SPI1_Init:00000048 $d
+     /tmp/ccst2WgL.s:841    .bss.hspi1:00000000 hspi1
+     /tmp/ccst2WgL.s:368    .text.MX_TIM2_Init:00000000 $t
+     /tmp/ccst2WgL.s:373    .text.MX_TIM2_Init:00000000 MX_TIM2_Init
+     /tmp/ccst2WgL.s:480    .text.MX_TIM2_Init:0000006c $d
+     /tmp/ccst2WgL.s:834    .bss.htim2:00000000 htim2
+     /tmp/ccst2WgL.s:487    .text.SystemClock_Config:00000000 $t
+     /tmp/ccst2WgL.s:493    .text.SystemClock_Config:00000000 SystemClock_Config
+     /tmp/ccst2WgL.s:682    .text.SystemClock_Config:000000c8 $d
+     /tmp/ccst2WgL.s:688    .text.main:00000000 $t
+     /tmp/ccst2WgL.s:694    .text.main:00000000 main
+     /tmp/ccst2WgL.s:811    .text.main:00000070 $d
+     /tmp/ccst2WgL.s:821    .bss.buff.0:00000000 buff.0
+     /tmp/ccst2WgL.s:818    .bss.buff.0:00000000 $d
+     /tmp/ccst2WgL.s:824    .data.ack_rsp:00000000 $d
+     /tmp/ccst2WgL.s:831    .bss.htim2:00000000 $d
+     /tmp/ccst2WgL.s:838    .bss.hspi1:00000000 $d
 
 UNDEFINED SYMBOLS
 ws2811_parse_buffer

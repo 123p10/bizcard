@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc1VOoVx.s 			page 1
+ARM GAS  /tmp/ccrRJhkD.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc1VOoVx.s 			page 1
   30:USB_DEVICE/App/usb_device.c **** 
   31:USB_DEVICE/App/usb_device.c **** /* USER CODE END Includes */
   32:USB_DEVICE/App/usb_device.c **** 
-ARM GAS  /tmp/cc1VOoVx.s 			page 2
+ARM GAS  /tmp/ccrRJhkD.s 			page 2
 
 
   33:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN PV */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc1VOoVx.s 			page 1
   46 000a 2000     		movs	r0, r4
   47 000c FFF7FEFF 		bl	memset
   48              	.LVL0:
-ARM GAS  /tmp/cc1VOoVx.s 			page 3
+ARM GAS  /tmp/ccrRJhkD.s 			page 3
 
 
   68:USB_DEVICE/App/usb_device.c ****   GPIO_InitStruct.Pin = GPIO_PIN_12;
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc1VOoVx.s 			page 1
   77:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PreTreatment */
   78:USB_DEVICE/App/usb_device.c **** 
   79:USB_DEVICE/App/usb_device.c ****   /* Init Device Library, add supported class and start the library. */
-ARM GAS  /tmp/cc1VOoVx.s 			page 4
+ARM GAS  /tmp/ccrRJhkD.s 			page 4
 
 
   80:USB_DEVICE/App/usb_device.c ****   if (USBD_Init(&hUsbDeviceFS, &FS_Desc, DEVICE_FS) != USBD_OK)
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc1VOoVx.s 			page 1
   94:USB_DEVICE/App/usb_device.c ****     Error_Handler();
   95:USB_DEVICE/App/usb_device.c ****   }
   96:USB_DEVICE/App/usb_device.c **** 
-ARM GAS  /tmp/cc1VOoVx.s 			page 5
+ARM GAS  /tmp/ccrRJhkD.s 			page 5
 
 
   97:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PostTreatment */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc1VOoVx.s 			page 1
  179              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
  180              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f042x6.h"
  181              		.file 5 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h"
-ARM GAS  /tmp/cc1VOoVx.s 			page 6
+ARM GAS  /tmp/ccrRJhkD.s 			page 6
 
 
  182              		.file 6 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
@@ -309,16 +309,16 @@ ARM GAS  /tmp/cc1VOoVx.s 			page 1
  187              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
  188              		.file 12 "Core/Inc/main.h"
  189              		.file 13 "<built-in>"
-ARM GAS  /tmp/cc1VOoVx.s 			page 7
+ARM GAS  /tmp/ccrRJhkD.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_device.c
-     /tmp/cc1VOoVx.s:19     .text.MX_USB_DEVICE_Init:00000000 $t
-     /tmp/cc1VOoVx.s:25     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
-     /tmp/cc1VOoVx.s:162    .text.MX_USB_DEVICE_Init:0000009c $d
-     /tmp/cc1VOoVx.s:174    .bss.hUsbDeviceFS:00000000 hUsbDeviceFS
-     /tmp/cc1VOoVx.s:171    .bss.hUsbDeviceFS:00000000 $d
+     /tmp/ccrRJhkD.s:19     .text.MX_USB_DEVICE_Init:00000000 $t
+     /tmp/ccrRJhkD.s:25     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
+     /tmp/ccrRJhkD.s:162    .text.MX_USB_DEVICE_Init:0000009c $d
+     /tmp/ccrRJhkD.s:174    .bss.hUsbDeviceFS:00000000 hUsbDeviceFS
+     /tmp/ccrRJhkD.s:171    .bss.hUsbDeviceFS:00000000 $d
 
 UNDEFINED SYMBOLS
 memset

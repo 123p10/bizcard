@@ -28,9 +28,9 @@ for a in range(20):
         for i in range(NUM_LEDS):
             rem = a % 6
             if x_y_map[i] % 6 == rem:
-                arr[j] = arr[j] + bytearray([10, 10, 0])
+                arr[j] = arr[j] + bytearray([50, 0, 0])
             else:
-                arr[j] = arr[j] + bytearray([20, 0, 20])
+                arr[j] = arr[j] + bytearray([00, 0, 10])
 
     for j in range(t):
         for i in range(4):
