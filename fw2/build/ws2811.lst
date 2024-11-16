@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccucxxi1.s 			page 1
+ARM GAS  /tmp/ccMsIz5z.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
   40              		.cfi_offset 14, -4
   41 0002 0600     		movs	r6, r0
   42 0004 8C46     		mov	ip, r1
-ARM GAS  /tmp/ccucxxi1.s 			page 2
+ARM GAS  /tmp/ccMsIz5z.s 			page 2
 
 
   17:Core/Src/ws2811.c **** 	for (uint32_t i = 0; i < n; i++) {
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
   92              		.loc 1 21 71 is_stmt 0 view .LVU21
   93 0030 0233     		adds	r3, r3, #2
   94              		.loc 1 21 98 view .LVU22
-ARM GAS  /tmp/ccucxxi1.s 			page 3
+ARM GAS  /tmp/ccMsIz5z.s 			page 3
 
 
   95 0032 9278     		ldrb	r2, [r2, #2]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  140              		.cfi_offset 4, -20
  141              		.cfi_offset 5, -16
  142              		.cfi_offset 6, -12
-ARM GAS  /tmp/ccucxxi1.s 			page 4
+ARM GAS  /tmp/ccMsIz5z.s 			page 4
 
 
  143              		.cfi_offset 7, -8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  190              		.loc 1 34 2 is_stmt 1 view .LVU43
   35:Core/Src/ws2811.c **** 	uint8_t bit_i = 7;
  191              		.loc 1 35 2 view .LVU44
-ARM GAS  /tmp/ccucxxi1.s 			page 5
+ARM GAS  /tmp/ccMsIz5z.s 			page 5
 
 
   36:Core/Src/ws2811.c **** 	for(uint32_t i = 0;i < BYTES_PER_LED*NUMBER_LEDS;i++) {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  230 0040 D170     		strb	r1, [r2, #3]
  231 0042 22E0     		b	.L15
  232              	.LVL18:
-ARM GAS  /tmp/ccucxxi1.s 			page 6
+ARM GAS  /tmp/ccMsIz5z.s 			page 6
 
 
  233              	.L16:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  268              	.LVL22:
   55:Core/Src/ws2811.c **** 				}
  269              		.loc 1 55 6 view .LVU75
-ARM GAS  /tmp/ccucxxi1.s 			page 7
+ARM GAS  /tmp/ccMsIz5z.s 			page 7
 
 
   55:Core/Src/ws2811.c **** 				}
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  310 007c 1D4A     		ldr	r2, .L27+12
  311              	.LVL30:
   41:Core/Src/ws2811.c **** 				spi_d[1] = 0;
-ARM GAS  /tmp/ccucxxi1.s 			page 8
+ARM GAS  /tmp/ccMsIz5z.s 			page 8
 
 
  312              		.loc 1 41 14 view .LVU91
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  354              	.LBE12:
   37:Core/Src/ws2811.c **** 		for(uint8_t j = 0; j < 8; j++) {
  355              		.loc 1 37 11 view .LVU104
-ARM GAS  /tmp/ccucxxi1.s 			page 9
+ARM GAS  /tmp/ccMsIz5z.s 			page 9
 
 
  356 009c 8026     		movs	r6, #128
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
   70:Core/Src/ws2811.c **** 		spi_index = 0;
   71:Core/Src/ws2811.c **** 		memcpy(ws2811_buffer, ws2811_bkup_buffer, BUFF_SIZE);
   72:Core/Src/ws2811.c **** 	}
-ARM GAS  /tmp/ccucxxi1.s 			page 10
+ARM GAS  /tmp/ccMsIz5z.s 			page 10
 
 
   73:Core/Src/ws2811.c **** 	return WS2811_RET_OK;	
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  450              		.align	2
  453              	spi_index:
  454 0000 00000000 		.space	4
-ARM GAS  /tmp/ccucxxi1.s 			page 11
+ARM GAS  /tmp/ccMsIz5z.s 			page 11
 
 
  455              		.section	.bss.ws2811_buffer,"aw",%nobits
@@ -627,27 +627,27 @@ ARM GAS  /tmp/ccucxxi1.s 			page 1
  474              		.file 7 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h"
  475              		.file 8 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_spi.h"
  476              		.file 9 "<built-in>"
-ARM GAS  /tmp/ccucxxi1.s 			page 12
+ARM GAS  /tmp/ccMsIz5z.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 ws2811.c
-     /tmp/ccucxxi1.s:19     .text.ws2811_tx:00000000 $t
-     /tmp/ccucxxi1.s:25     .text.ws2811_tx:00000000 ws2811_tx
-     /tmp/ccucxxi1.s:119    .text.ws2811_tx:00000040 $d
-     /tmp/ccucxxi1.s:465    .bss.ws2811_bkup_buffer:00000000 ws2811_bkup_buffer
-     /tmp/ccucxxi1.s:124    .text.ws2811_trigger:00000000 $t
-     /tmp/ccucxxi1.s:130    .text.ws2811_trigger:00000000 ws2811_trigger
-     /tmp/ccucxxi1.s:428    .text.ws2811_trigger:000000e8 $d
-     /tmp/ccucxxi1.s:441    .bss.output_buff:00000000 output_buff
-     /tmp/ccucxxi1.s:453    .bss.spi_index:00000000 spi_index
-     /tmp/ccucxxi1.s:459    .bss.ws2811_buffer:00000000 ws2811_buffer
-     /tmp/ccucxxi1.s:447    .bss.spi_d:00000000 spi_d
-     /tmp/ccucxxi1.s:438    .bss.output_buff:00000000 $d
-     /tmp/ccucxxi1.s:444    .bss.spi_d:00000000 $d
-     /tmp/ccucxxi1.s:450    .bss.spi_index:00000000 $d
-     /tmp/ccucxxi1.s:456    .bss.ws2811_buffer:00000000 $d
-     /tmp/ccucxxi1.s:462    .bss.ws2811_bkup_buffer:00000000 $d
+     /tmp/ccMsIz5z.s:19     .text.ws2811_tx:00000000 $t
+     /tmp/ccMsIz5z.s:25     .text.ws2811_tx:00000000 ws2811_tx
+     /tmp/ccMsIz5z.s:119    .text.ws2811_tx:00000040 $d
+     /tmp/ccMsIz5z.s:465    .bss.ws2811_bkup_buffer:00000000 ws2811_bkup_buffer
+     /tmp/ccMsIz5z.s:124    .text.ws2811_trigger:00000000 $t
+     /tmp/ccMsIz5z.s:130    .text.ws2811_trigger:00000000 ws2811_trigger
+     /tmp/ccMsIz5z.s:428    .text.ws2811_trigger:000000e8 $d
+     /tmp/ccMsIz5z.s:441    .bss.output_buff:00000000 output_buff
+     /tmp/ccMsIz5z.s:453    .bss.spi_index:00000000 spi_index
+     /tmp/ccMsIz5z.s:459    .bss.ws2811_buffer:00000000 ws2811_buffer
+     /tmp/ccMsIz5z.s:447    .bss.spi_d:00000000 spi_d
+     /tmp/ccMsIz5z.s:438    .bss.output_buff:00000000 $d
+     /tmp/ccMsIz5z.s:444    .bss.spi_d:00000000 $d
+     /tmp/ccMsIz5z.s:450    .bss.spi_index:00000000 $d
+     /tmp/ccMsIz5z.s:456    .bss.ws2811_buffer:00000000 $d
+     /tmp/ccMsIz5z.s:462    .bss.ws2811_bkup_buffer:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_SPI_Transmit_IT

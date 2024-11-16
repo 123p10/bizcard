@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccQbHWOU.s 			page 1
+ARM GAS  /tmp/cc1VOoVx.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccQbHWOU.s 			page 1
   30:USB_DEVICE/App/usb_device.c **** 
   31:USB_DEVICE/App/usb_device.c **** /* USER CODE END Includes */
   32:USB_DEVICE/App/usb_device.c **** 
-ARM GAS  /tmp/ccQbHWOU.s 			page 2
+ARM GAS  /tmp/cc1VOoVx.s 			page 2
 
 
   33:USB_DEVICE/App/usb_device.c **** /* USER CODE BEGIN PV */
@@ -96,153 +96,236 @@ ARM GAS  /tmp/ccQbHWOU.s 			page 1
   65:USB_DEVICE/App/usb_device.c **** {
   27              		.loc 1 65 1 view -0
   28              		.cfi_startproc
-  29              		@ args = 0, pretend = 0, frame = 0
+  29              		@ args = 0, pretend = 0, frame = 24
   30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31 0000 10B5     		push	{r4, lr}
+  31 0000 70B5     		push	{r4, r5, r6, lr}
   32              	.LCFI0:
-  33              		.cfi_def_cfa_offset 8
-  34              		.cfi_offset 4, -8
-  35              		.cfi_offset 14, -4
+  33              		.cfi_def_cfa_offset 16
+  34              		.cfi_offset 4, -16
+  35              		.cfi_offset 5, -12
+  36              		.cfi_offset 6, -8
+  37              		.cfi_offset 14, -4
+  38 0002 86B0     		sub	sp, sp, #24
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 40
   66:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PreTreatment */
-  67:USB_DEVICE/App/usb_device.c **** 
-  68:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PreTreatment */
-  69:USB_DEVICE/App/usb_device.c **** 
-  70:USB_DEVICE/App/usb_device.c ****   /* Init Device Library, add supported class and start the library. */
-  71:USB_DEVICE/App/usb_device.c ****   if (USBD_Init(&hUsbDeviceFS, &FS_Desc, DEVICE_FS) != USBD_OK)
-  36              		.loc 1 71 3 view .LVU1
-  37              		.loc 1 71 7 is_stmt 0 view .LVU2
-  38 0002 1249     		ldr	r1, .L10
-  39 0004 1248     		ldr	r0, .L10+4
-  40 0006 0022     		movs	r2, #0
-  41 0008 FFF7FEFF 		bl	USBD_Init
-  42              	.LVL0:
-  43              		.loc 1 71 6 discriminator 1 view .LVU3
-  44 000c 0028     		cmp	r0, #0
-ARM GAS  /tmp/ccQbHWOU.s 			page 3
+  67:USB_DEVICE/App/usb_device.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
+  41              		.loc 1 67 3 view .LVU1
+  42              		.loc 1 67 20 is_stmt 0 view .LVU2
+  43 0004 01AC     		add	r4, sp, #4
+  44 0006 1422     		movs	r2, #20
+  45 0008 0021     		movs	r1, #0
+  46 000a 2000     		movs	r0, r4
+  47 000c FFF7FEFF 		bl	memset
+  48              	.LVL0:
+ARM GAS  /tmp/cc1VOoVx.s 			page 3
 
 
-  45 000e 11D1     		bne	.L6
-  46              	.L2:
-  72:USB_DEVICE/App/usb_device.c ****   {
-  73:USB_DEVICE/App/usb_device.c ****     Error_Handler();
-  74:USB_DEVICE/App/usb_device.c ****   }
-  75:USB_DEVICE/App/usb_device.c ****   if (USBD_RegisterClass(&hUsbDeviceFS, &USBD_CDC) != USBD_OK)
-  47              		.loc 1 75 3 is_stmt 1 view .LVU4
-  48              		.loc 1 75 7 is_stmt 0 view .LVU5
-  49 0010 1049     		ldr	r1, .L10+8
-  50 0012 0F48     		ldr	r0, .L10+4
-  51 0014 FFF7FEFF 		bl	USBD_RegisterClass
-  52              	.LVL1:
-  53              		.loc 1 75 6 discriminator 1 view .LVU6
-  54 0018 0028     		cmp	r0, #0
-  55 001a 0ED1     		bne	.L7
-  56              	.L3:
-  76:USB_DEVICE/App/usb_device.c ****   {
-  77:USB_DEVICE/App/usb_device.c ****     Error_Handler();
-  78:USB_DEVICE/App/usb_device.c ****   }
-  79:USB_DEVICE/App/usb_device.c ****   if (USBD_CDC_RegisterInterface(&hUsbDeviceFS, &USBD_Interface_fops_FS) != USBD_OK)
-  57              		.loc 1 79 3 is_stmt 1 view .LVU7
-  58              		.loc 1 79 7 is_stmt 0 view .LVU8
-  59 001c 0E49     		ldr	r1, .L10+12
-  60 001e 0C48     		ldr	r0, .L10+4
-  61 0020 FFF7FEFF 		bl	USBD_CDC_RegisterInterface
-  62              	.LVL2:
-  63              		.loc 1 79 6 discriminator 1 view .LVU9
-  64 0024 0028     		cmp	r0, #0
-  65 0026 0BD1     		bne	.L8
-  66              	.L4:
-  80:USB_DEVICE/App/usb_device.c ****   {
-  81:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  68:USB_DEVICE/App/usb_device.c ****   GPIO_InitStruct.Pin = GPIO_PIN_12;
+  49              		.loc 1 68 3 is_stmt 1 view .LVU3
+  50              		.loc 1 68 23 is_stmt 0 view .LVU4
+  51 0010 8026     		movs	r6, #128
+  52 0012 7601     		lsls	r6, r6, #5
+  53 0014 0196     		str	r6, [sp, #4]
+  69:USB_DEVICE/App/usb_device.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  54              		.loc 1 69 3 is_stmt 1 view .LVU5
+  55              		.loc 1 69 24 is_stmt 0 view .LVU6
+  56 0016 0123     		movs	r3, #1
+  57 0018 0293     		str	r3, [sp, #8]
+  70:USB_DEVICE/App/usb_device.c ****   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  58              		.loc 1 70 3 is_stmt 1 view .LVU7
+  59              		.loc 1 70 24 is_stmt 0 view .LVU8
+  60 001a 0133     		adds	r3, r3, #1
+  61 001c 0393     		str	r3, [sp, #12]
+  71:USB_DEVICE/App/usb_device.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
+  62              		.loc 1 71 3 is_stmt 1 view .LVU9
+  63              		.loc 1 71 25 is_stmt 0 view .LVU10
+  64 001e 0133     		adds	r3, r3, #1
+  65 0020 0493     		str	r3, [sp, #16]
+  72:USB_DEVICE/App/usb_device.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  66              		.loc 1 72 3 is_stmt 1 view .LVU11
+  67 0022 9025     		movs	r5, #144
+  68 0024 ED05     		lsls	r5, r5, #23
+  69 0026 2100     		movs	r1, r4
+  70 0028 2800     		movs	r0, r5
+  71 002a FFF7FEFF 		bl	HAL_GPIO_Init
+  72              	.LVL1:
+  73:USB_DEVICE/App/usb_device.c ****   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_RESET);
+  73              		.loc 1 73 3 view .LVU12
+  74 002e 0022     		movs	r2, #0
+  75 0030 3100     		movs	r1, r6
+  76 0032 2800     		movs	r0, r5
+  77 0034 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  78              	.LVL2:
+  74:USB_DEVICE/App/usb_device.c **** 	HAL_Delay(25);                                         // Enough time for host to disconnect devic
+  79              		.loc 1 74 2 view .LVU13
+  80 0038 1920     		movs	r0, #25
+  81 003a FFF7FEFF 		bl	HAL_Delay
+  82              	.LVL3:
+  75:USB_DEVICE/App/usb_device.c **** 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_12, GPIO_PIN_SET);   // Back high - so host will enumerate
+  83              		.loc 1 75 2 view .LVU14
+  84 003e 0122     		movs	r2, #1
+  85 0040 3100     		movs	r1, r6
+  86 0042 2800     		movs	r0, r5
+  87 0044 FFF7FEFF 		bl	HAL_GPIO_WritePin
+  88              	.LVL4:
+  76:USB_DEVICE/App/usb_device.c **** 	HAL_GPIO_DeInit(GPIOA, GPIO_PIN_12);                   // Deinitialize the pin
+  89              		.loc 1 76 2 view .LVU15
+  90 0048 3100     		movs	r1, r6
+  91 004a 2800     		movs	r0, r5
+  92 004c FFF7FEFF 		bl	HAL_GPIO_DeInit
+  93              	.LVL5:
+  77:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PreTreatment */
+  78:USB_DEVICE/App/usb_device.c **** 
+  79:USB_DEVICE/App/usb_device.c ****   /* Init Device Library, add supported class and start the library. */
+ARM GAS  /tmp/cc1VOoVx.s 			page 4
+
+
+  80:USB_DEVICE/App/usb_device.c ****   if (USBD_Init(&hUsbDeviceFS, &FS_Desc, DEVICE_FS) != USBD_OK)
+  94              		.loc 1 80 3 view .LVU16
+  95              		.loc 1 80 7 is_stmt 0 view .LVU17
+  96 0050 1249     		ldr	r1, .L10
+  97 0052 1348     		ldr	r0, .L10+4
+  98 0054 0022     		movs	r2, #0
+  99 0056 FFF7FEFF 		bl	USBD_Init
+ 100              	.LVL6:
+ 101              		.loc 1 80 6 discriminator 1 view .LVU18
+ 102 005a 0028     		cmp	r0, #0
+ 103 005c 12D1     		bne	.L6
+ 104              	.L2:
+  81:USB_DEVICE/App/usb_device.c ****   {
+  82:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  83:USB_DEVICE/App/usb_device.c ****   }
+  84:USB_DEVICE/App/usb_device.c ****   if (USBD_RegisterClass(&hUsbDeviceFS, &USBD_CDC) != USBD_OK)
+ 105              		.loc 1 84 3 is_stmt 1 view .LVU19
+ 106              		.loc 1 84 7 is_stmt 0 view .LVU20
+ 107 005e 1149     		ldr	r1, .L10+8
+ 108 0060 0F48     		ldr	r0, .L10+4
+ 109 0062 FFF7FEFF 		bl	USBD_RegisterClass
+ 110              	.LVL7:
+ 111              		.loc 1 84 6 discriminator 1 view .LVU21
+ 112 0066 0028     		cmp	r0, #0
+ 113 0068 0FD1     		bne	.L7
+ 114              	.L3:
+  85:USB_DEVICE/App/usb_device.c ****   {
+  86:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  87:USB_DEVICE/App/usb_device.c ****   }
+  88:USB_DEVICE/App/usb_device.c ****   if (USBD_CDC_RegisterInterface(&hUsbDeviceFS, &USBD_Interface_fops_FS) != USBD_OK)
+ 115              		.loc 1 88 3 is_stmt 1 view .LVU22
+ 116              		.loc 1 88 7 is_stmt 0 view .LVU23
+ 117 006a 0F49     		ldr	r1, .L10+12
+ 118 006c 0C48     		ldr	r0, .L10+4
+ 119 006e FFF7FEFF 		bl	USBD_CDC_RegisterInterface
+ 120              	.LVL8:
+ 121              		.loc 1 88 6 discriminator 1 view .LVU24
+ 122 0072 0028     		cmp	r0, #0
+ 123 0074 0CD1     		bne	.L8
+ 124              	.L4:
+  89:USB_DEVICE/App/usb_device.c ****   {
+  90:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  91:USB_DEVICE/App/usb_device.c ****   }
+  92:USB_DEVICE/App/usb_device.c ****   if (USBD_Start(&hUsbDeviceFS) != USBD_OK)
+ 125              		.loc 1 92 3 is_stmt 1 view .LVU25
+ 126              		.loc 1 92 7 is_stmt 0 view .LVU26
+ 127 0076 0A48     		ldr	r0, .L10+4
+ 128 0078 FFF7FEFF 		bl	USBD_Start
+ 129              	.LVL9:
+ 130              		.loc 1 92 6 discriminator 1 view .LVU27
+ 131 007c 0028     		cmp	r0, #0
+ 132 007e 0AD1     		bne	.L9
+ 133              	.L1:
+  93:USB_DEVICE/App/usb_device.c ****   {
+  94:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+  95:USB_DEVICE/App/usb_device.c ****   }
+  96:USB_DEVICE/App/usb_device.c **** 
+ARM GAS  /tmp/cc1VOoVx.s 			page 5
+
+
+  97:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PostTreatment */
+  98:USB_DEVICE/App/usb_device.c **** 
+  99:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PostTreatment */
+ 100:USB_DEVICE/App/usb_device.c **** }
+ 134              		.loc 1 100 1 view .LVU28
+ 135 0080 06B0     		add	sp, sp, #24
+ 136              		@ sp needed
+ 137 0082 70BD     		pop	{r4, r5, r6, pc}
+ 138              	.L6:
   82:USB_DEVICE/App/usb_device.c ****   }
-  83:USB_DEVICE/App/usb_device.c ****   if (USBD_Start(&hUsbDeviceFS) != USBD_OK)
-  67              		.loc 1 83 3 is_stmt 1 view .LVU10
-  68              		.loc 1 83 7 is_stmt 0 view .LVU11
-  69 0028 0948     		ldr	r0, .L10+4
-  70 002a FFF7FEFF 		bl	USBD_Start
-  71              	.LVL3:
-  72              		.loc 1 83 6 discriminator 1 view .LVU12
-  73 002e 0028     		cmp	r0, #0
-  74 0030 09D1     		bne	.L9
-  75              	.L1:
-  84:USB_DEVICE/App/usb_device.c ****   {
-  85:USB_DEVICE/App/usb_device.c ****     Error_Handler();
+ 139              		.loc 1 82 5 is_stmt 1 view .LVU29
+ 140 0084 FFF7FEFF 		bl	Error_Handler
+ 141              	.LVL10:
+ 142 0088 E9E7     		b	.L2
+ 143              	.L7:
   86:USB_DEVICE/App/usb_device.c ****   }
-  87:USB_DEVICE/App/usb_device.c **** 
-  88:USB_DEVICE/App/usb_device.c ****   /* USER CODE BEGIN USB_DEVICE_Init_PostTreatment */
-  89:USB_DEVICE/App/usb_device.c **** 
-  90:USB_DEVICE/App/usb_device.c ****   /* USER CODE END USB_DEVICE_Init_PostTreatment */
-  91:USB_DEVICE/App/usb_device.c **** }
-  76              		.loc 1 91 1 view .LVU13
-  77              		@ sp needed
-  78 0032 10BD     		pop	{r4, pc}
-  79              	.L6:
-  73:USB_DEVICE/App/usb_device.c ****   }
-  80              		.loc 1 73 5 is_stmt 1 view .LVU14
-ARM GAS  /tmp/ccQbHWOU.s 			page 4
+ 144              		.loc 1 86 5 view .LVU30
+ 145 008a FFF7FEFF 		bl	Error_Handler
+ 146              	.LVL11:
+ 147 008e ECE7     		b	.L3
+ 148              	.L8:
+  90:USB_DEVICE/App/usb_device.c ****   }
+ 149              		.loc 1 90 5 view .LVU31
+ 150 0090 FFF7FEFF 		bl	Error_Handler
+ 151              	.LVL12:
+ 152 0094 EFE7     		b	.L4
+ 153              	.L9:
+  94:USB_DEVICE/App/usb_device.c ****   }
+ 154              		.loc 1 94 5 view .LVU32
+ 155 0096 FFF7FEFF 		bl	Error_Handler
+ 156              	.LVL13:
+ 157              		.loc 1 100 1 is_stmt 0 view .LVU33
+ 158 009a F1E7     		b	.L1
+ 159              	.L11:
+ 160              		.align	2
+ 161              	.L10:
+ 162 009c 00000000 		.word	FS_Desc
+ 163 00a0 00000000 		.word	hUsbDeviceFS
+ 164 00a4 00000000 		.word	USBD_CDC
+ 165 00a8 00000000 		.word	USBD_Interface_fops_FS
+ 166              		.cfi_endproc
+ 167              	.LFE43:
+ 169              		.global	hUsbDeviceFS
+ 170              		.section	.bss.hUsbDeviceFS,"aw",%nobits
+ 171              		.align	2
+ 174              	hUsbDeviceFS:
+ 175 0000 00000000 		.space	708
+ 175      00000000 
+ 175      00000000 
+ 175      00000000 
+ 175      00000000 
+ 176              		.text
+ 177              	.Letext0:
+ 178              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
+ 179              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
+ 180              		.file 4 "Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f042x6.h"
+ 181              		.file 5 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h"
+ARM GAS  /tmp/cc1VOoVx.s 			page 6
 
 
-  81 0034 FFF7FEFF 		bl	Error_Handler
-  82              	.LVL4:
-  83 0038 EAE7     		b	.L2
-  84              	.L7:
-  77:USB_DEVICE/App/usb_device.c ****   }
-  85              		.loc 1 77 5 view .LVU15
-  86 003a FFF7FEFF 		bl	Error_Handler
-  87              	.LVL5:
-  88 003e EDE7     		b	.L3
-  89              	.L8:
-  81:USB_DEVICE/App/usb_device.c ****   }
-  90              		.loc 1 81 5 view .LVU16
-  91 0040 FFF7FEFF 		bl	Error_Handler
-  92              	.LVL6:
-  93 0044 F0E7     		b	.L4
-  94              	.L9:
-  85:USB_DEVICE/App/usb_device.c ****   }
-  95              		.loc 1 85 5 view .LVU17
-  96 0046 FFF7FEFF 		bl	Error_Handler
-  97              	.LVL7:
-  98              		.loc 1 91 1 is_stmt 0 view .LVU18
-  99 004a F2E7     		b	.L1
- 100              	.L11:
- 101              		.align	2
- 102              	.L10:
- 103 004c 00000000 		.word	FS_Desc
- 104 0050 00000000 		.word	hUsbDeviceFS
- 105 0054 00000000 		.word	USBD_CDC
- 106 0058 00000000 		.word	USBD_Interface_fops_FS
- 107              		.cfi_endproc
- 108              	.LFE43:
- 110              		.global	hUsbDeviceFS
- 111              		.section	.bss.hUsbDeviceFS,"aw",%nobits
- 112              		.align	2
- 115              	hUsbDeviceFS:
- 116 0000 00000000 		.space	708
- 116      00000000 
- 116      00000000 
- 116      00000000 
- 116      00000000 
- 117              		.text
- 118              	.Letext0:
- 119              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
- 120              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
- 121              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
- 122              		.file 5 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
- 123              		.file 6 "USB_DEVICE/App/usbd_desc.h"
- 124              		.file 7 "USB_DEVICE/App/usbd_cdc_if.h"
- 125              		.file 8 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
- 126              		.file 9 "Core/Inc/main.h"
-ARM GAS  /tmp/ccQbHWOU.s 			page 5
+ 182              		.file 6 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ 183              		.file 7 "Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h"
+ 184              		.file 8 "USB_DEVICE/App/usbd_desc.h"
+ 185              		.file 9 "USB_DEVICE/App/usbd_cdc_if.h"
+ 186              		.file 10 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h"
+ 187              		.file 11 "Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h"
+ 188              		.file 12 "Core/Inc/main.h"
+ 189              		.file 13 "<built-in>"
+ARM GAS  /tmp/cc1VOoVx.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usb_device.c
-     /tmp/ccQbHWOU.s:19     .text.MX_USB_DEVICE_Init:00000000 $t
-     /tmp/ccQbHWOU.s:25     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
-     /tmp/ccQbHWOU.s:103    .text.MX_USB_DEVICE_Init:0000004c $d
-     /tmp/ccQbHWOU.s:115    .bss.hUsbDeviceFS:00000000 hUsbDeviceFS
-     /tmp/ccQbHWOU.s:112    .bss.hUsbDeviceFS:00000000 $d
+     /tmp/cc1VOoVx.s:19     .text.MX_USB_DEVICE_Init:00000000 $t
+     /tmp/cc1VOoVx.s:25     .text.MX_USB_DEVICE_Init:00000000 MX_USB_DEVICE_Init
+     /tmp/cc1VOoVx.s:162    .text.MX_USB_DEVICE_Init:0000009c $d
+     /tmp/cc1VOoVx.s:174    .bss.hUsbDeviceFS:00000000 hUsbDeviceFS
+     /tmp/cc1VOoVx.s:171    .bss.hUsbDeviceFS:00000000 $d
 
 UNDEFINED SYMBOLS
+memset
+HAL_GPIO_Init
+HAL_GPIO_WritePin
+HAL_Delay
+HAL_GPIO_DeInit
 USBD_Init
 USBD_RegisterClass
 USBD_CDC_RegisterInterface
