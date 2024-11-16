@@ -18,5 +18,6 @@ typedef enum {
 } ws2811_ret_E;
 
 ws2811_ret_E ws2811_tx(led_code_S (*led_timeseries)[NUMBER_LEDS], uint32_t n);
+ws2811_ret_E ws2811_parse_buffer(uint8_t* led_data, uint8_t led_index, uint8_t num_leds, uint32_t t);
 ws2811_ret_E ws2811_trigger(void);
 #endif

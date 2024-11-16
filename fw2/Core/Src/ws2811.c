@@ -24,6 +24,13 @@ ws2811_ret_E ws2811_tx(led_code_S (*led_timeseries)[NUMBER_LEDS], uint32_t n) {
 	return WS2811_RET_OK;
 }
 
+ws2811_ret_E ws2811_parse_buffer(uint8_t* led_data, uint8_t led_index, uint8_t num_leds, uint32_t t) {
+	for (uint32_t i = 0; i < num_leds*BYTES_PER_LED; i++) {
+		ws2811_bkup_buffer[t * NUMBER_LEDS*BYTES_PER_LED + (led_index)*BYTES_PER_LED + i] = led_data[i];
+	}
+	return WS2811_RET_OK;
+}
+
 static volatile uint8_t spi_d[BITS];
 static volatile uint8_t output_buff[BYTES_PER_LED*NUMBER_LEDS*BITS+3];
 ws2811_ret_E ws2811_trigger(void) {

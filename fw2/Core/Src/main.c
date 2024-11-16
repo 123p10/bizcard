@@ -30,8 +30,8 @@
 /* USER CODE BEGIN PTD */
 
 typedef enum {
+	USB_CONTROL_ACK = 0x77,
 	USB_CONTROL_DATA = 0x55,
-	USB_CONTROL_ACK = 0x77
 } usb_control_E;
 
 /* USER CODE END PTD */
@@ -65,13 +65,22 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-static uint8_t ack_rsp[2] ={0x48, 0x49, 0x59};
+static uint8_t ack_rsp[2] ={0x48, 0x49};
+
+static void parse_data(uint8_t* buf, uint32_t len) {
+	uint8_t t = buf[1];
+	uint8_t led_index = buf[2];
+	uint8_t num_leds = buf[3];
+	ws2811_parse_buffer(&buf[4], led_index, num_leds, t);
+}
+
 void usb_callback(uint8_t* buf, uint32_t* len) {
 	uint32_t l = *len;
 	if (l >= 1) {
 		uint8_t control = buf[0];
 		switch (control) {
 			case(USB_CONTROL_DATA): {
+				parse_data(buf, l);
 				break;
 			}
 			case(USB_CONTROL_ACK): {
@@ -139,9 +148,7 @@ HAL_GPIO_WritePin(LED_GPIO_Port, LED_Pin, GPIO_PIN_SET);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	uint8_t buffer[] = "Hello, World!\r\n";
-    ws2811_tx(buff, WS2811_BUFF_LEN);
-    HAL_Delay(200);
+    HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
